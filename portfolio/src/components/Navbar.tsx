@@ -29,14 +29,6 @@ export const Navbar = () => {
           </a>{" "}
           |
           <a
-            href="https://dev.to/lyndsiwilliams"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Blog
-          </a>{" "}
-          |
-          <a
             href="https://github.com/lyndsiWilliams"
             target="_blank"
             rel="noopener noreferrer"
