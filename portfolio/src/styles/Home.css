@@ -1,0 +1,144 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-card {
+  width: 700px;
+  margin: 1% 0;
+  padding-bottom: 2%;
+  border: 4px solid black;
+  border-radius: 25px;
+  background-image: linear-gradient(black, #ddd7ff);
+  box-shadow: 6px 6px rgba(0,0,0,.4);
+}
+
+.home-pic {
+  width: 500px;
+  margin-top: 5%;
+  border: 4px solid black;
+  border-radius: 500px;
+}
+
+.text-wrapper {
+  margin: 5%;
+  background-color: white;
+  border: 1px solid black;
+  opacity: .7;
+}
+
+.artifacts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to right, #ddd7ff, #CBA0F1, #ddd7ff);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.artifacts a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #701dd6;
+  padding: 1.5% 1% 1% 1%;
+  transition: opacity .5s;
+  font-size: 1.2em;
+}
+
+.artifacts a:hover {
+  opacity: 0.2;
+}
+
+.intro-text {
+  margin: 7% 5% 5% 5%;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.skills, .experience, .education {
+  margin: 5%;
+}
+
+.skills p {
+  text-align: left;
+}
+
+.education p, .experience p, h4 {
+  text-align: left;
+}
+
+.experience-btns {
+  display: flex;
+  flex-flow: column;
+}
+
+.experience-bullets {
+  line-height: 1em;
+  font-family: "Kufam";
+}
+
+.lambda-btn {
+  width: 400px;
+  padding-left: 15%;
+}
+
+.lambda-btn img {
+  width: 75%;
+  margin: -5%;
+}
+
+@media(max-width: 700px) {
+  .name-title {
+    width: 500px;
+  }
+  
+  .intro-card {
+    width: 500px;
+  }
+
+  .home-pic {
+    width: 400px;
+  }
+
+  .lambda-btn {
+    width: 300px;
+    padding-left: 13%;
+  }
+}
+
+@media(max-width: 500px) {
+  .name-title {
+    width: 400px;
+  }
+  
+  .intro-card {
+    width: 400px;
+  }
+
+  .home-pic {
+    width: 300px;
+  }
+
+  .lambda-btn {
+    width: 250px;
+  }
+}
+
+@media(max-width: 400px) {
+  .name-title {
+    width: 350px;
+  }
+  
+  .intro-card {
+    width: 350px;
+  }
+
+  .home-pic {
+    width: 250px;
+  }
+
+  .lambda-btn {
+    padding-left: 6%;
+  }
+}
