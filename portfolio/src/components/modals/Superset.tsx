@@ -52,7 +52,7 @@ export default function Superset() {
             </p>
             <p>• Implement feature work with clean, maintainable code</p>
             <p>
-              • Review code in pull requests to ensure everything stayed within
+              • Review code in pull requests to ensure everything stays within
               the project's code styles
             </p>
             <p>
