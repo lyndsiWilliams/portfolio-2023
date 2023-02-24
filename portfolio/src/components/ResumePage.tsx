@@ -24,7 +24,7 @@ const ResumePage = () => {
         title="file"
         width="80%"
         height="1350px"
-        style={{ maxWidth: "834px" }}
+        style={{ maxWidth: "834px", minWidth: "834px" }}
         loading="eager"
       ></iframe>
     </div>
