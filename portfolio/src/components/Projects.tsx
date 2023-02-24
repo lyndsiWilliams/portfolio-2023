@@ -5,6 +5,7 @@ import medCabinet from "../images/medCabinet.png";
 import conway from "../images/conway.png";
 import superset from "../images/superset.png";
 import reactHooks from "../images/reactHooks.png";
+import amythio from "../images/amythio.png";
 
 export const Projects = () => {
   return (
@@ -88,6 +89,56 @@ export const Projects = () => {
         </div>
       </div>
       <h1>- Projects -</h1>
+      <h1>- 2021 -</h1>
+      <div className="card-container">
+        <div className="project-card">
+          <div className="link-btns">
+            <a
+              href="https://amythio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopLeftRadius: "20px" }}
+            >
+              Deployment
+            </a>
+            <a
+              href="https://github.com/lyndsiWilliams/amyth.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopRightRadius: "20px" }}
+            >
+              Github
+            </a>
+          </div>
+          <a
+            href="https://amythio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-img"
+          >
+            <img
+              src={amythio}
+              alt="amythio storybook page"
+              className="project-img"
+            />
+          </a>
+          <h3>.: Amyth.io :.</h3>
+          <h4 style={{ textAlign: "center" }}>
+            Component library <br /> ReactJS | TypeScript | Emotion | Material
+            UI | Cypress | Vercel | Storybook
+          </h4>
+          <div className="description">
+            <p>
+              My first component library built with a fun space theme. I used
+              this project to teach myself how to:
+            </p>
+            <p>• Animate a static image</p>
+            <p>• Deploy to Storybook</p>
+            <p>• Set up component testing in Cypress</p>
+            <p>• Publish packages to NPM</p>
+          </div>
+        </div>
+      </div>
       <h1>- 2020 -</h1>
       <div className="card-container">
         <div className="project-card">
