@@ -7,6 +7,7 @@ const ResumePage = () => {
         width="80%"
         height="1350px"
         style={{ maxWidth: "834px" }}
+        loading="eager"
       ></iframe>
     </div>
   );
