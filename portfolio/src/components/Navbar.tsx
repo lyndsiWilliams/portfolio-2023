@@ -19,14 +19,6 @@ export const Navbar = () => {
           >
             LinkedIn
           </a>{" "}
-          |<Link to="/resume">Resume</Link> |
-          <a
-            href="mailto:lyndsikaywilliams@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Email
-          </a>{" "}
           |
           <a
             href="https://github.com/lyndsiWilliams"
@@ -34,6 +26,14 @@ export const Navbar = () => {
             rel="noopener noreferrer"
           >
             GitHub
+          </a>{" "}
+          | <Link to="/resume">Resume</Link> |
+          <a
+            href="mailto:lyndsikaywilliams@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email
           </a>
         </div>
         <h1>Lyndsi Kay Williams</h1>
