@@ -23,7 +23,7 @@ const Home = () => {
               applications. With over 2 years of experience in the industry, I
               have a broad understanding of web development technologies,
               including HTML, CSS, functional styling, JavaScript/TypeScript,
-              and React.
+              and React/React Native.
             </p>
             <p>
               I am dedicated to writing clean, maintainable code and am always
@@ -37,8 +37,8 @@ const Home = () => {
             <h3>♦ Skills ♦</h3>
             <h4>Front end</h4>
             <p>
-              React, Redux, React Testing Library, Jest, Cypress, Javascript,
-              Typescript, HTML, CSS, LESS/SASS, Emotion
+              React, React Native, Redux, React Testing Library, Jest, Cypress,
+              Javascript, Typescript, HTML, CSS, LESS/SASS, Emotion
             </p>
             <h4>Back end</h4>
             <p>Python, NodeJS, Express, SQL</p>
