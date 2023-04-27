@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // Styling
 import "../styles/Projects.css";
 import citrics from "../images/citrics.jpg";
@@ -6,6 +7,13 @@ import conway from "../images/conway.png";
 import superset from "../images/superset.png";
 import reactHooks from "../images/reactHooks.png";
 import amythio from "../images/amythio.png";
+import useReducerForm from "../images/useReducerForm.png";
+// Componenets
+import { Button } from "@mui/material";
+import SupersetTechDebt2021 from "./modals/projects/SupersetTechDebt2021";
+import SupersetVisualImprovements2021 from "./modals/projects/SupersetVisualImprovements2021";
+import SupersetBugFixes2021 from "./modals/projects/SupersetBugFixes2021";
+import SupersetFeatureWork2021 from "./modals/projects/SupersetFeatureWork2021";
 
 export const Projects = () => {
   return (
@@ -89,8 +97,123 @@ export const Projects = () => {
         </div>
       </div>
       <h1>- Projects -</h1>
+      <h1>- 2023 -</h1>
+      <div className="card-container">
+        <div className="project-card">
+          <div className="link-btns">
+            <a
+              href="https://usereducer-form.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopLeftRadius: "20px" }}
+            >
+              Deployment
+            </a>
+            <a
+              href="https://github.com/lyndsiWilliams/vite-example"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopRightRadius: "20px" }}
+            >
+              Github
+            </a>
+          </div>
+          <a
+            href="https://usereducer-form.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-img"
+          >
+            <img
+              src={useReducerForm}
+              alt="useReducer form"
+              className="project-img"
+            />
+          </a>
+          <h3>Vite/useReducer form state example</h3>
+          <h4 style={{ textAlign: "center", padding: "0 8px" }}>
+            Vite | React Hooks | ReactJS | TypeScript | Emotion | Material UI |
+            Vercel | Lodash
+          </h4>
+          <div className="description">
+            <p>
+              My first app created with Vite. This project demonstrates
+              manipulating state with the useReducer React hook.
+            </p>
+            <p>
+              There is a form that uses an action to change state by field, or
+              the data can be changed by manipulating the entire JSON directly.
+            </p>
+          </div>
+        </div>
+      </div>
       <h1>- 2021 -</h1>
       <div className="card-container">
+        <div className="project-card">
+          <div className="link-btns">
+            <a
+              href="https://amythio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopLeftRadius: "20px" }}
+            >
+              Deployment
+            </a>
+            <a
+              href="https://github.com/lyndsiWilliams/amyth.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopRightRadius: "20px" }}
+            >
+              Github
+            </a>
+          </div>
+          <a
+            href="https://amythio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-img"
+          >
+            <img
+              src={superset}
+              alt="Apache Supserset logo"
+              className="project-img"
+              style={{ backgroundColor: "white", opacity: ".9" }}
+            />
+          </a>
+          <h3>Apache Superset OSS contributions</h3>
+          <h4 style={{ textAlign: "center" }}>
+            ReactJS | TypeScript | Redux | Hooks | Emotion | Material UI | React
+            Testing Library
+          </h4>
+          <div className="description">
+            <p>My open source contributions to Apache Superset in 2021.</p>
+            <p>Click to see details and links to pull requests:</p>
+            <SupersetFeatureWork2021 />
+            <SupersetTechDebt2021 />
+            <SupersetVisualImprovements2021 />
+            <SupersetBugFixes2021 />
+            <Button
+              data-testid="SupersetTechDebt2021"
+              variant="contained"
+              color="secondary"
+              style={{
+                fontFamily: "Kufam",
+                borderWidth: "4px",
+                marginBottom: "16px",
+              }}
+            >
+              <Link
+                to="https://github.com/apache/superset/pull/16626"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                • Hackathon - RTL cleanup •
+              </Link>
+            </Button>
+          </div>
+        </div>
         <div className="project-card">
           <div className="link-btns">
             <a
