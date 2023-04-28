@@ -152,24 +152,19 @@ export const Projects = () => {
         <div className="project-card">
           <div className="link-btns">
             <a
-              href="https://amythio.vercel.app/"
+              href="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ borderTopLeftRadius: "20px" }}
+              style={{
+                borderTopLeftRadius: "20px",
+                borderTopRightRadius: "20px",
+              }}
             >
-              Deployment
-            </a>
-            <a
-              href="https://github.com/lyndsiWilliams/amyth.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ borderTopRightRadius: "20px" }}
-            >
-              Github
+              Check out my Superset PRs
             </a>
           </div>
           <a
-            href="https://amythio.vercel.app/"
+            href="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
             target="_blank"
             rel="noopener noreferrer"
             className="project-img"
@@ -200,7 +195,7 @@ export const Projects = () => {
               style={{
                 fontFamily: "Kufam",
                 borderWidth: "4px",
-                marginBottom: "16px",
+                marginBottom: "20px",
               }}
             >
               <Link
