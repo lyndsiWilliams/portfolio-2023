@@ -23,7 +23,7 @@ export default function SupersetBugFixes2021() {
         style={{
           fontFamily: "Kufam",
           borderWidth: "4px",
-          marginBottom: "16px",
+          marginBottom: "8px",
         }}
       >
         • Bug fixes •

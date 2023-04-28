@@ -185,9 +185,9 @@ export const Projects = () => {
             <p>My open source contributions to Apache Superset in 2021.</p>
             <p>Click to see details and links to pull requests:</p>
             <SupersetFeatureWork2021 />
-            <SupersetTechDebt2021 />
-            <SupersetVisualImprovements2021 />
             <SupersetBugFixes2021 />
+            <SupersetVisualImprovements2021 />
+            <SupersetTechDebt2021 />
             <Button
               data-testid="SupersetTechDebt2021"
               variant="contained"

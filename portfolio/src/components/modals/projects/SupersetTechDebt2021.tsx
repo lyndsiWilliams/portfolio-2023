@@ -23,7 +23,7 @@ export default function SupersetTechDebt2021() {
         style={{
           fontFamily: "Kufam",
           borderWidth: "4px",
-          marginBottom: "8px",
+          marginBottom: "16px",
         }}
       >
         • Tech debt •
