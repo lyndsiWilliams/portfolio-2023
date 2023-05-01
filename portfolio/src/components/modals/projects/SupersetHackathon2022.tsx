@@ -54,7 +54,7 @@ export default function SupersetHackathon2022() {
             <p style={{ lineHeight: "1.2" }}>
               I created a proof of concept for a long-awaited feature in
               Superset: Frontend tagging for dashboards, charts, and queries.
-              The Canadian Centre of Cyber Security (CCCS) picked up where I
+              The Canadian Centre for Cyber Security (CCCS) picked up where I
               left off on the hackathon project and finished the feature.
             </p>
             <BulletedLink
