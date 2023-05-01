@@ -141,8 +141,9 @@ export const Projects = () => {
               manipulating state with the useReducer React hook.
             </p>
             <p>
-              There is a form that uses an action to change state by field, or
-              the data can be changed by manipulating the entire JSON directly.
+              This form uses an action to change state independently by field.
+              Alternatively, the data can be changed as a whole by manipulating
+              the entire JSON directly.
             </p>
           </div>
         </div>
