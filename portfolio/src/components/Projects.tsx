@@ -10,6 +10,7 @@ import amythio from "../images/amythio.png";
 import useReducerForm from "../images/useReducerForm.png";
 // Componenets
 import { Button } from "@mui/material";
+import DividerTitle from "./DividerTitle";
 import ProjectCard from "./ProjectCard";
 import SupersetTechDebt2021 from "./modals/projects/SupersetTechDebt2021";
 import SupersetVisualImprovements2021 from "./modals/projects/SupersetVisualImprovements2021";
@@ -19,40 +20,7 @@ import SupersetFeatureWork2021 from "./modals/projects/SupersetFeatureWork2021";
 export const Projects = () => {
   return (
     <>
-      <h1>- Blogs -</h1>
-      <div className="card-container">
-        <ProjectCard
-          primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
-          primaryLinkText="Check it out!"
-          image={reactHooks}
-          imageAlt="React symbol + fish hook"
-          title="React hooks: How to convert useState to useReducer"
-          secondaryTitle="# webdev # react # tutorial # programming"
-          description={
-            <p>
-              A basic example of how to use the useReducer hook for state
-              instead of the useState hook.
-            </p>
-          }
-        />
-        <ProjectCard
-          primaryLink="https://dev.to/lyndsiwilliams/superset-testing-and-enzyme-to-rtl-conversion-1j6a"
-          primaryLinkText="Check it out!"
-          image={superset}
-          imageAlt="Apache Supserset logo"
-          addImageBackground
-          title="Apache Superset: Testing and Enzyme to RTL conversion"
-          secondaryTitle="# testing # react # opensource # webdev"
-          description={
-            <p>
-              Helpful tips for writing tests in Apache Superset with Jest and
-              React Testing Library.
-            </p>
-          }
-        />
-      </div>
-      <h1>- Projects -</h1>
-      <h1>- 2023 -</h1>
+      <DividerTitle title="2023" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://usereducer-form.vercel.app/"
@@ -76,12 +44,75 @@ export const Projects = () => {
             </>
           }
         />
+        <ProjectCard
+          primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
+          primaryLinkText="Check it out on dev.to"
+          image={reactHooks}
+          imageAlt="React symbol + fish hook"
+          title="React hooks: How to convert useState to useReducer"
+          secondaryTitle={
+            <>
+              Tech Blog on dev.to
+              <br /># webdev # react # tutorial # programming
+            </>
+          }
+          description={
+            <p>
+              A basic example of how to use the useReducer hook for state
+              instead of the useState hook.
+            </p>
+          }
+        />
       </div>
-      <h1>- 2021 -</h1>
+      <DividerTitle title="2022" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
-          primaryLinkText="Check out my Superset PRs"
+          primaryLinkText="Check out my PRs on Github"
+          image={superset}
+          imageAlt="Apache Supserset logo"
+          addImageBackground
+          title="Apache Superset OSS contributions"
+          secondaryTitle="ReactJS | TypeScript | Redux | Hooks | Emotion | Material UI | React
+          Testing Library"
+          description={
+            <>
+              <p>My open source contributions to Apache Superset in 2022.</p>
+              <p>Click to see details and links to pull requests:</p>
+              {/* <SupersetFeatureWork2022 />
+              <SupersetBugFixes2022 />
+              <SupersetVisualImprovements2022 />
+              <SupersetTechDebt2022 />
+              <SupersetHackathon2022 /> */}
+            </>
+          }
+        />
+        <ProjectCard
+          primaryLink="https://dev.to/lyndsiwilliams/superset-testing-and-enzyme-to-rtl-conversion-1j6a"
+          primaryLinkText="Check it out on dev.to"
+          image={superset}
+          imageAlt="Apache Supserset logo"
+          addImageBackground
+          title="Apache Superset: Testing and Enzyme to RTL conversion"
+          secondaryTitle={
+            <>
+              Tech Blog on dev.to
+              <br /># testing # react # opensource # webdev
+            </>
+          }
+          description={
+            <p>
+              Helpful tips for writing tests in Apache Superset with Jest and
+              React Testing Library.
+            </p>
+          }
+        />
+      </div>
+      <DividerTitle title="2021" />
+      <div className="card-container">
+        <ProjectCard
+          primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
+          primaryLinkText="Check out my PRs on Github"
           image={superset}
           imageAlt="Apache Supserset logo"
           addImageBackground
@@ -144,7 +175,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <h1>- 2020 -</h1>
+      <DividerTitle title="2020" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://citrics.netlify.app/"
