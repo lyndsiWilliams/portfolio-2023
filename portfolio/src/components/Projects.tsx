@@ -21,12 +21,36 @@ import SupersetVisualImprovements2022 from "./modals/projects/SupersetVisualImpr
 import SupersetBugFixes2022 from "./modals/projects/SupersetBugFixes2022";
 import SupersetFeatureWork2022 from "./modals/projects/SupersetFeatureWork2022";
 import SupersetHackathon2022 from "./modals/projects/SupersetHackathon2022";
+import SupersetTechDebt2023 from "./modals/projects/SupersetTechDebt2023";
+import SupersetVisualImprovements2023 from "./modals/projects/SupersetVisualImprovements2023";
+import SupersetBugFixes2023 from "./modals/projects/SupersetBugFixes2023";
+import SupersetFeatureWork2023 from "./modals/projects/SupersetFeatureWork2023";
 
 export const Projects = () => {
   return (
     <>
       <DividerTitle title="2023" />
       <div className="card-container">
+        <ProjectCard
+          primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
+          primaryLinkText="Check out my PRs on Github"
+          image={superset}
+          imageAlt="Apache Supserset logo"
+          addImageBackground
+          title="Apache Superset OSS contributions"
+          secondaryTitle="ReactJS | TypeScript | Redux | Hooks | Emotion | Material UI | React
+          Testing Library"
+          description={
+            <>
+              <p>My open source contributions to Apache Superset in 2023.</p>
+              <p>Click to see details and links to pull requests:</p>
+              <SupersetFeatureWork2023 />
+              <SupersetBugFixes2023 />
+              <SupersetVisualImprovements2023 />
+              <SupersetTechDebt2023 />
+            </>
+          }
+        />
         <ProjectCard
           primaryLink="https://usereducer-form.vercel.app/"
           secondaryLink="https://github.com/lyndsiWilliams/vite-example"
