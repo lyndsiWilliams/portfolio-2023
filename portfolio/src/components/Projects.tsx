@@ -132,8 +132,8 @@ export const Projects = () => {
           </a>
           <h3>Vite/useReducer form state example</h3>
           <h4 style={{ textAlign: "center", padding: "0 8px" }}>
-            Vite | React Hooks | ReactJS | TypeScript | Emotion | Material UI |
-            Vercel | Lodash
+            Vite | React | React Hooks | ReactJS | TypeScript | Emotion |
+            Material UI | Vercel | Lodash
           </h4>
           <div className="description">
             <p>
