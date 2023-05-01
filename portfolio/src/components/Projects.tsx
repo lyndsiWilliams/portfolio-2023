@@ -16,6 +16,11 @@ import SupersetTechDebt2021 from "./modals/projects/SupersetTechDebt2021";
 import SupersetVisualImprovements2021 from "./modals/projects/SupersetVisualImprovements2021";
 import SupersetBugFixes2021 from "./modals/projects/SupersetBugFixes2021";
 import SupersetFeatureWork2021 from "./modals/projects/SupersetFeatureWork2021";
+import SupersetTechDebt2022 from "./modals/projects/SupersetTechDebt2022";
+import SupersetVisualImprovements2022 from "./modals/projects/SupersetVisualImprovements2022";
+import SupersetBugFixes2022 from "./modals/projects/SupersetBugFixes2022";
+import SupersetFeatureWork2022 from "./modals/projects/SupersetFeatureWork2022";
+import SupersetHackathon2022 from "./modals/projects/SupersetHackathon2022";
 
 export const Projects = () => {
   return (
@@ -52,7 +57,7 @@ export const Projects = () => {
           title="React hooks: How to convert useState to useReducer"
           secondaryTitle={
             <>
-              Tech Blog on dev.to
+              • Tech blog on dev.to •
               <br /># webdev # react # tutorial # programming
             </>
           }
@@ -79,11 +84,11 @@ export const Projects = () => {
             <>
               <p>My open source contributions to Apache Superset in 2022.</p>
               <p>Click to see details and links to pull requests:</p>
-              {/* <SupersetFeatureWork2022 />
+              <SupersetFeatureWork2022 />
               <SupersetBugFixes2022 />
               <SupersetVisualImprovements2022 />
               <SupersetTechDebt2022 />
-              <SupersetHackathon2022 /> */}
+              <SupersetHackathon2022 />
             </>
           }
         />
@@ -96,7 +101,7 @@ export const Projects = () => {
           title="Apache Superset: Testing and Enzyme to RTL conversion"
           secondaryTitle={
             <>
-              Tech Blog on dev.to
+              • Tech blog on dev.to •
               <br /># testing # react # opensource # webdev
             </>
           }
@@ -157,8 +162,8 @@ export const Projects = () => {
           title=".: Amyth.io :."
           secondaryTitle={
             <>
-              Component library <br /> ReactJS | TypeScript | Emotion | Material
-              UI | Cypress | Vercel | Storybook
+              • Component library •<br /> ReactJS | TypeScript | Emotion |
+              Material UI | Cypress | Vercel | Storybook
             </>
           }
           description={
