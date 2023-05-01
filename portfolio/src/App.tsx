@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar";
 import Home from "./components/Home";
 import { Projects } from "./components/Projects";
 import ResumePage from "./components/ResumePage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<ResumePage />} />
         </Routes>
+        <ScrollToTop />
       </Router>
     </div>
   );

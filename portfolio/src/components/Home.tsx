@@ -37,8 +37,9 @@ const Home = () => {
             <h3>♦ Skills ♦</h3>
             <h4>Front end</h4>
             <p>
-              React, React Native, Vite, Redux, React Context, React Testing Library, Jest, Cypress,
-              Javascript, Typescript, HTML, CSS, LESS/SASS, Emotion
+              React, React Native, Vite, Redux, React Context, React Testing
+              Library, Jest, Cypress, Javascript, Typescript, HTML, CSS,
+              LESS/SASS, Emotion
             </p>
             <h4>Back end</h4>
             <p>Python, NodeJS, Express, SQL</p>

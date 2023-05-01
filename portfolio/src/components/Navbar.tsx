@@ -6,7 +6,7 @@ import "../styles/Navbar.css";
 export const Navbar = () => {
   return (
     <header>
-      <div className="nav-bar">
+      <div className="nav-bar" id="back-to-top-anchor">
         <Link to="/">About Me</Link>
         <Link to="/projects">Projects</Link>
       </div>
