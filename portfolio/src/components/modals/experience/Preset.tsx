@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 import DialogContent from "@mui/material/DialogContent";
-import { BootstrapDialog, BootstrapDialogTitle } from "./sharedFunctionality";
+import { BootstrapDialog, BootstrapDialogTitle } from "../sharedFunctionality";
 
 export default function Preset() {
   const [open, setOpen] = React.useState(false);

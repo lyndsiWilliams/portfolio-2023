@@ -1,14 +1,15 @@
 // Package imports
 import { Button } from "@mui/material";
 // Components
-import Preset from "./modals/Preset";
-import TeamLead from "./modals/TeamLead";
-import POC from "./modals/POC";
-import Superset from "./modals/Superset";
+import Preset from "../components/modals/experience/Preset";
+import TeamLead from "../components/modals/experience/TeamLead";
+import POC from "../components/modals/experience/POC";
+import Superset from "../components/modals/experience/Superset";
 // Styling
 import "../styles/Home.css";
 import meBlue from "../images/meBlue.jpg";
 import lambdaBadge from "../images/lambdaBadge.png";
+import DividerTitle from "../components/DividerTitle";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
       <section className="intro-card">
         <img src={meBlue} alt="Lyndsi Kay Williams" className="home-pic" />
         <div className="text-wrapper">
-          <section className="intro-text">
+          <section className="intro-text" style={{ marginBottom: "48px" }}>
             <p>
               I am a detail-oriented frontend software engineer with a passion
               for creating user-friendly and visually appealing websites and
@@ -33,8 +34,8 @@ const Home = () => {
               needs.
             </p>
           </section>
-          <section className="skills">
-            <h3>♦ Skills ♦</h3>
+          <section className="skills" style={{ marginBottom: "48px" }}>
+            <DividerTitle title="Skills" center hSize="h4" />
             <h4>Front end</h4>
             <p>
               React, React Native, Vite, Redux, React Context, React Testing
@@ -49,7 +50,7 @@ const Home = () => {
             </p>
           </section>
           <section className="experience">
-            <h3>♦ Experience ♦</h3>
+            <DividerTitle title="Experience" center hSize="h4" />
             <p
               style={{
                 textAlign: "center",
@@ -61,7 +62,11 @@ const Home = () => {
             >
               Click each job for Details!
             </p>
-            <div className="experience-btns" data-testid="experience-btns">
+            <div
+              className="experience-btns"
+              data-testid="experience-btns"
+              style={{ marginBottom: "48px" }}
+            >
               <Superset />
               <Preset />
               <TeamLead />
@@ -69,7 +74,7 @@ const Home = () => {
             </div>
           </section>
           <section className="education" data-testid="education">
-            <h3>♦ Education ♦</h3>
+            <DividerTitle title="Education" center hSize="h4" />
             <h4>
               Bloom Institute of Technology (formerly Lambda School), Remote
               <br />
@@ -82,23 +87,26 @@ const Home = () => {
               hours/week) hands-on curriculum with a focus on computer science,
               software engineering, and web development.
             </p>
-            <div className="lambda-btn">
+            <div className="lambda-btn" style={{ marginBottom: "40px" }}>
               <img
                 src={lambdaBadge}
                 alt="Full-Stack Web Development + Technical Interviewing Bloom Institute of Technology (formerly Lambda School) badge"
                 className="badge-pic"
               />
+              <p>
+                Check out my verified Full-Stack Web Development + Technical
+                Interviewing badge issued by Bloom Institute of Technology
+                (formerly Lambda School):
+              </p>
               <Button
                 variant="contained"
                 color="secondary"
-                style={{ fontFamily: "Kufam", borderWidth: "4px" }}
+                style={{ fontFamily: "Kufam" }}
                 href="https://www.youracclaim.com/badges/f20e1df7-2a07-477e-887f-06ef174c9887/public_url"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Check out my verified Full-Stack Web Development + Technical
-                Interviewing badge issued by Bloom Institute of Technology
-                (formerly Lambda School)
+                • Verified by BloomTech •
               </Button>
             </div>
             <h4>

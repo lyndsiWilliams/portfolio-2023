@@ -10,21 +10,21 @@ import amythio from "../images/amythio.png";
 import useReducerForm from "../images/useReducerForm.png";
 // Componenets
 import { Button } from "@mui/material";
-import DividerTitle from "./DividerTitle";
-import ProjectCard from "./ProjectCard";
-import SupersetTechDebt2021 from "./modals/projects/SupersetTechDebt2021";
-import SupersetVisualImprovements2021 from "./modals/projects/SupersetVisualImprovements2021";
-import SupersetBugFixes2021 from "./modals/projects/SupersetBugFixes2021";
-import SupersetFeatureWork2021 from "./modals/projects/SupersetFeatureWork2021";
-import SupersetTechDebt2022 from "./modals/projects/SupersetTechDebt2022";
-import SupersetVisualImprovements2022 from "./modals/projects/SupersetVisualImprovements2022";
-import SupersetBugFixes2022 from "./modals/projects/SupersetBugFixes2022";
-import SupersetFeatureWork2022 from "./modals/projects/SupersetFeatureWork2022";
-import SupersetHackathon2022 from "./modals/projects/SupersetHackathon2022";
-import SupersetTechDebt2023 from "./modals/projects/SupersetTechDebt2023";
-import SupersetVisualImprovements2023 from "./modals/projects/SupersetVisualImprovements2023";
-import SupersetBugFixes2023 from "./modals/projects/SupersetBugFixes2023";
-import SupersetFeatureWork2023 from "./modals/projects/SupersetFeatureWork2023";
+import DividerTitle from "../components/DividerTitle";
+import ProjectCard from "../components/ProjectCard";
+import SupersetTechDebt2021 from "../components/modals/projects/SupersetTechDebt2021";
+import SupersetVisualImprovements2021 from "../components/modals/projects/SupersetVisualImprovements2021";
+import SupersetBugFixes2021 from "../components/modals/projects/SupersetBugFixes2021";
+import SupersetFeatureWork2021 from "../components/modals/projects/SupersetFeatureWork2021";
+import SupersetTechDebt2022 from "../components/modals/projects/SupersetTechDebt2022";
+import SupersetVisualImprovements2022 from "../components/modals/projects/SupersetVisualImprovements2022";
+import SupersetBugFixes2022 from "../components/modals/projects/SupersetBugFixes2022";
+import SupersetFeatureWork2022 from "../components/modals/projects/SupersetFeatureWork2022";
+import SupersetHackathon2022 from "../components/modals/projects/SupersetHackathon2022";
+import SupersetTechDebt2023 from "../components/modals/projects/SupersetTechDebt2023";
+import SupersetVisualImprovements2023 from "../components/modals/projects/SupersetVisualImprovements2023";
+import SupersetBugFixes2023 from "../components/modals/projects/SupersetBugFixes2023";
+import SupersetFeatureWork2023 from "../components/modals/projects/SupersetFeatureWork2023";
 
 export const Projects = () => {
   return (

@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 // Components
 import { Navbar } from "./components/Navbar";
-import Home from "./components/Home";
-import { Projects } from "./components/Projects";
-import ResumePage from "./components/ResumePage";
+import Home from "./pages/Home";
+import { Projects } from "./pages/Projects";
+import ResumePage from "./pages/ResumePage";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
