@@ -29,7 +29,7 @@ import SupersetFeatureWork2023 from "../components/modals/projects/SupersetFeatu
 export const Projects = () => {
   return (
     <>
-      <DividerTitle title="2023" />
+      <DividerTitle title="2023" textShadowColor="gray" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
@@ -93,7 +93,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <DividerTitle title="2022" />
+      <DividerTitle title="2022" textShadowColor="gray" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
@@ -137,7 +137,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <DividerTitle title="2021" />
+      <DividerTitle title="2021" textShadowColor="gray" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
@@ -204,7 +204,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <DividerTitle title="2020" />
+      <DividerTitle title="2020" textShadowColor="gray" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://citrics.netlify.app/"

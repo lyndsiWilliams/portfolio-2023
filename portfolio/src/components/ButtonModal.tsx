@@ -8,15 +8,19 @@ import {
 
 export default function ButtonModal({
   buttonText,
+  noBullets,
   titleText,
   secondaryTitleText,
+  secondaryTitleTextAlign,
   experienceContent,
   thereIsAButtonUnderThisComponent,
   bottomComponent,
 }: {
-  buttonText: string;
-  titleText: string;
+  buttonText: string | ReactElement<any, any>;
+  noBullets?: boolean;
+  titleText: string | ReactElement<any, any>;
   secondaryTitleText: string;
+  secondaryTitleTextAlign?: CanvasTextAlign;
   experienceContent: ReactElement<any, any>;
   thereIsAButtonUnderThisComponent?: boolean;
   bottomComponent?: boolean;
@@ -40,10 +44,18 @@ export default function ButtonModal({
     }
   };
 
+  const titleTextCheck = () => {
+    if (typeof titleText === "string") {
+      return titleText;
+    } else {
+      return titleText.props.children[0];
+    }
+  };
+
   return (
     <div style={{ marginTop: "2%" }}>
       <Button
-        data-testid={`${titleText.split(" ").join("")}-test`}
+        data-testid={`${titleTextCheck().split(" ").join("")}-test`}
         variant="contained"
         color="secondary"
         onClick={handleClickOpen}
@@ -53,7 +65,7 @@ export default function ButtonModal({
           marginBottom: marginBottomCheck(),
         }}
       >
-        • {buttonText} •
+        {noBullets ? buttonText : `• ${buttonText} •`}
       </Button>
       <BootstrapDialog onClose={handleClose} open={open}>
         <BootstrapDialogTitle
@@ -70,9 +82,13 @@ export default function ButtonModal({
           <div className="experience-bullets">
             <p
               style={{
+                textAlign: secondaryTitleTextAlign
+                  ? secondaryTitleTextAlign
+                  : undefined,
                 fontFamily: "'Raleway', sans-serif",
                 fontSize: "1.5em",
                 fontWeight: "bold",
+                minWidth: "300px",
               }}
             >
               {secondaryTitleText}
