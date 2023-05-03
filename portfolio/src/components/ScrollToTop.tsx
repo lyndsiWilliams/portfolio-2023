@@ -13,7 +13,6 @@ export default function ScrollToTop() {
       (event.target as HTMLDivElement).ownerDocument || document
     ).querySelector("#back-to-top-anchor");
 
-    console.log("findme", anchor);
     if (anchor) {
       anchor.scrollIntoView({
         block: "center",
