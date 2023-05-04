@@ -27,6 +27,7 @@ export default function ButtonModal({
 }) {
   const [open, setOpen] = React.useState(false);
 
+  // Set the bottomMargin space based on the position of the component
   const marginBottomCheck = () => {
     if (bottomComponent) {
       return "20px";
@@ -35,7 +36,7 @@ export default function ButtonModal({
     } else return "8px";
   };
 
-  // If the title is an element return the first string from the element
+  // If the title is an element, return the first string from the element
   const titleTextCheck = () => {
     if (typeof titleText === "string") {
       return titleText;
@@ -82,9 +83,7 @@ export default function ButtonModal({
           <div className="experience-bullets">
             <p
               style={{
-                textAlign: secondaryTitleTextAlign
-                  ? secondaryTitleTextAlign
-                  : undefined,
+                textAlign: secondaryTitleTextAlign || undefined,
                 fontFamily: "'Raleway', sans-serif",
                 fontSize: "1.5em",
                 fontWeight: "bold",
