@@ -157,14 +157,15 @@ export const Projects = () => {
               <SupersetVisualImprovements2021 />
               <SupersetTechDebt2021 />
               <Button
-                data-testid="SupersetTechDebt2021"
+                data-testid="Hackathon2021"
                 variant="contained"
                 color="secondary"
                 style={{
                   fontFamily: "Kufam",
                   borderWidth: "4px",
                   borderRadius: "20px",
-                  border: "2px solid rgb(100, 100, 100)",
+                  border: "1px solid rgb(100, 100, 100)",
+                  boxShadow: "3px 3px rgba(0,0,0,.3)",
                   marginBottom: "20px",
                 }}
               >

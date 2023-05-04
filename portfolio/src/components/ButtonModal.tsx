@@ -60,8 +60,9 @@ export default function ButtonModal({
           fontFamily: "Kufam",
           borderWidth: "4px",
           borderRadius: borderRadiusCheck(),
-          border: "2px solid rgb(100, 100, 100)",
+          border: "1px solid rgb(100, 100, 100)",
           marginBottom: marginBottomCheck(),
+          boxShadow: "3px 3px rgba(0,0,0,.3)",
         }}
       >
         {noBullets ? buttonText : `• ${buttonText} •`}

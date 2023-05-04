@@ -104,7 +104,8 @@ const Home = () => {
                 style={{
                   fontFamily: "Kufam",
                   borderRadius: "20px",
-                  border: "2px solid rgb(100, 100, 100)",
+                  border: "1px solid rgb(100, 100, 100)",
+                  boxShadow: "3px 3px rgba(0,0,0,.3)",
                 }}
                 href="https://www.youracclaim.com/badges/f20e1df7-2a07-477e-887f-06ef174c9887/public_url"
                 target="_blank"
