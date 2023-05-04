@@ -101,7 +101,11 @@ const Home = () => {
               <Button
                 variant="contained"
                 color="secondary"
-                style={{ fontFamily: "Kufam" }}
+                style={{
+                  fontFamily: "Kufam",
+                  borderRadius: "20px",
+                  border: "2px solid rgb(100, 100, 100)",
+                }}
                 href="https://www.youracclaim.com/badges/f20e1df7-2a07-477e-887f-06ef174c9887/public_url"
                 target="_blank"
                 rel="noopener noreferrer"

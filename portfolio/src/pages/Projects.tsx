@@ -29,7 +29,7 @@ import SupersetFeatureWork2023 from "../components/modals/projects/SupersetFeatu
 export const Projects = () => {
   return (
     <>
-      <DividerTitle title="2023" textShadowColor="gray" />
+      <DividerTitle title="2023" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
@@ -93,7 +93,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <DividerTitle title="2022" textShadowColor="gray" />
+      <DividerTitle title="2022" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
@@ -137,7 +137,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <DividerTitle title="2021" textShadowColor="gray" />
+      <DividerTitle title="2021" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://github.com/apache/superset/pulls?q=is%3Apr+sort%3Aupdated-desc+author%3AlyndsiWilliams+is%3Amerged"
@@ -163,6 +163,8 @@ export const Projects = () => {
                 style={{
                   fontFamily: "Kufam",
                   borderWidth: "4px",
+                  borderRadius: "20px",
+                  border: "2px solid rgb(100, 100, 100)",
                   marginBottom: "20px",
                 }}
               >
@@ -204,7 +206,7 @@ export const Projects = () => {
           }
         />
       </div>
-      <DividerTitle title="2020" textShadowColor="gray" />
+      <DividerTitle title="2020" />
       <div className="card-container">
         <ProjectCard
           primaryLink="https://citrics.netlify.app/"

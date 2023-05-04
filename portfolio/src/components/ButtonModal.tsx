@@ -27,29 +27,24 @@ export default function ButtonModal({
 }) {
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   const marginBottomCheck = () => {
     if (bottomComponent) {
       return "20px";
     } else if (thereIsAButtonUnderThisComponent) {
       return "16px";
-    } else {
-      return "8px";
-    }
+    } else return "8px";
   };
 
   const titleTextCheck = () => {
     if (typeof titleText === "string") {
       return titleText;
-    } else {
-      return titleText.props.children[0];
-    }
+    } else return titleText.props.children[0];
+  };
+
+  const borderRadiusCheck = () => {
+    if (typeof buttonText === "string") {
+      return "20px";
+    } else return "26px";
   };
 
   return (
@@ -58,19 +53,21 @@ export default function ButtonModal({
         data-testid={`${titleTextCheck().split(" ").join("")}-test`}
         variant="contained"
         color="secondary"
-        onClick={handleClickOpen}
+        onClick={() => setOpen(true)}
         style={{
           fontFamily: "Kufam",
           borderWidth: "4px",
+          borderRadius: borderRadiusCheck(),
+          border: "2px solid rgb(100, 100, 100)",
           marginBottom: marginBottomCheck(),
         }}
       >
         {noBullets ? buttonText : `• ${buttonText} •`}
       </Button>
-      <BootstrapDialog onClose={handleClose} open={open}>
+      <BootstrapDialog onClose={() => setOpen(false)} open={open}>
         <BootstrapDialogTitle
           id="customized-dialog-title"
-          onClose={handleClose}
+          onClose={() => setOpen(false)}
         >
           <span
             style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "bold" }}
