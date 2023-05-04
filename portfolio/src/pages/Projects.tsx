@@ -227,31 +227,31 @@ export const Projects = () => {
               </p>
               <p>
                 • Constructed and maintained the team{" "}
-                <a
-                  href="https://whimsical.com/341zvP6EuiJdMGJt3neFJa"
+                <Link
+                  to="https://whimsical.com/341zvP6EuiJdMGJt3neFJa"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   flowchart
-                </a>{" "}
+                </Link>{" "}
                 and{" "}
-                <a
-                  href="https://whimsical.com/T5VcCfKv8TwyKzgjfUnAeE"
+                <Link
+                  to="https://whimsical.com/T5VcCfKv8TwyKzgjfUnAeE"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   wireframe
-                </a>
+                </Link>
               </p>
               <p>
                 • Solely responsible for creating and styling the team's{" "}
-                <a
-                  href="https://citrics.netlify.app/about"
+                <Link
+                  to="https://citrics.netlify.app/about"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   About page
-                </a>
+                </Link>
               </p>
               <p>
                 • Utilized the Redux state management system to manage data on

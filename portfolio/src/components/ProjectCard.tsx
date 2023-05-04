@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   primaryLink,
@@ -24,8 +25,8 @@ const ProjectCard = ({
   return (
     <div className="project-card">
       <div className="link-btns">
-        <a
-          href={primaryLink}
+        <Link
+          to={primaryLink}
           target="_blank"
           rel="noopener noreferrer"
           style={
@@ -40,20 +41,20 @@ const ProjectCard = ({
           }
         >
           {primaryLinkText || "Deployment"}
-        </a>
+        </Link>
         {secondaryLink && (
-          <a
-            href={secondaryLink}
+          <Link
+            to={secondaryLink}
             target="_blank"
             rel="noopener noreferrer"
             style={{ borderTopRightRadius: "20px" }}
           >
             Github
-          </a>
+          </Link>
         )}
       </div>
-      <a
-        href={primaryLink}
+      <Link
+        to={primaryLink}
         target="_blank"
         rel="noopener noreferrer"
         className="project-img"
@@ -68,7 +69,7 @@ const ProjectCard = ({
               : undefined
           }
         />
-      </a>
+      </Link>
       <h3>{title}</h3>
       <h4 style={{ textAlign: "center" }}>{secondaryTitle}</h4>
       <div className="description">{description}</div>

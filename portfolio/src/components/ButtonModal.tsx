@@ -35,12 +35,14 @@ export default function ButtonModal({
     } else return "8px";
   };
 
+  // If the title is an element return the first string from the element
   const titleTextCheck = () => {
     if (typeof titleText === "string") {
       return titleText;
     } else return titleText.props.children[0];
   };
 
+  // If the button has multiple lines it needs a bigger borderRadius
   const borderRadiusCheck = () => {
     if (typeof buttonText === "string") {
       return "20px";

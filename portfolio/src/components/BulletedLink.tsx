@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const BulletedLink = ({ title, link }: { title: string; link: string }) => (
   <p>
     •{" "}
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <Link to={link} target="_blank" rel="noopener noreferrer">
       {title}
-    </a>
+    </Link>
   </p>
 );
 

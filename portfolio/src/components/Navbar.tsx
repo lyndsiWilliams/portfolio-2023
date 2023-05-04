@@ -12,29 +12,29 @@ export const Navbar = () => {
       </div>
       <div className="title-card">
         <div className="artifacts" data-testid="artifacts">
-          <a
-            href="https://www.linkedin.com/in/lyndsiwilliams/"
+          <Link
+            to="https://www.linkedin.com/in/lyndsiwilliams/"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
+          </Link>
           |
-          <a
-            href="https://github.com/lyndsiWilliams"
+          <Link
+            to="https://github.com/lyndsiWilliams"
             target="_blank"
             rel="noopener noreferrer"
           >
             GitHub
-          </a>
+          </Link>
           | <Link to="/resume">Resume</Link> |
-          <a
-            href="mailto:lyndsikaywilliams@gmail.com"
+          <Link
+            to="mailto:lyndsikaywilliams@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             Email
-          </a>
+          </Link>
         </div>
         <h1>Lyndsi Kay Williams</h1>
         <h2>Frontend Software Engineer</h2>

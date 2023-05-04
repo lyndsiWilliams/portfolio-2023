@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BulletedLink from "../../BulletedLink";
 import ButtonModal from "../../ButtonModal";
 
@@ -11,21 +12,21 @@ export default function SupersetFeatureWork2021() {
         <>
           <p>
             • FE: Export for Queries:{" "}
-            <a
-              href="https://github.com/apache/superset/pull/13981"
+            <Link
+              to="https://github.com/apache/superset/pull/13981"
               target="_blank"
               rel="noopener noreferrer"
             >
               #13981
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://github.com/apache/superset/pull/14086"
+            <Link
+              to="https://github.com/apache/superset/pull/14086"
               target="_blank"
               rel="noopener noreferrer"
             >
               #14086
-            </a>
+            </Link>
           </p>
           <BulletedLink
             title="FE: Import for Queries"
@@ -46,54 +47,54 @@ export default function SupersetFeatureWork2021() {
           <p>
             • Email report modal:
             <br />
-            <a
-              href="https://github.com/apache/superset/pull/15666"
+            <Link
+              to="https://github.com/apache/superset/pull/15666"
               target="_blank"
               rel="noopener noreferrer"
               style={{ marginLeft: "10px" }}
             >
               #15666
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://github.com/apache/superset/pull/15793"
+            <Link
+              to="https://github.com/apache/superset/pull/15793"
               target="_blank"
               rel="noopener noreferrer"
             >
               #15793
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://github.com/apache/superset/pull/15856"
+            <Link
+              to="https://github.com/apache/superset/pull/15856"
               target="_blank"
               rel="noopener noreferrer"
             >
               #15856
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://github.com/apache/superset/pull/15937"
+            <Link
+              to="https://github.com/apache/superset/pull/15937"
               target="_blank"
               rel="noopener noreferrer"
             >
               #15937
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://github.com/apache/superset/pull/15969"
+            <Link
+              to="https://github.com/apache/superset/pull/15969"
               target="_blank"
               rel="noopener noreferrer"
             >
               #15969
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://github.com/apache/superset/pull/16148"
+            <Link
+              to="https://github.com/apache/superset/pull/16148"
               target="_blank"
               rel="noopener noreferrer"
             >
               #16148
-            </a>
+            </Link>
           </p>
           <BulletedLink
             title="Help user to find the input fields in the dataset editor"
