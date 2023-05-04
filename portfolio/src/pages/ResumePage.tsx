@@ -12,7 +12,14 @@ const ResumePage: FunctionComponent = () => (
       <Button
         variant="contained"
         color="secondary"
-        style={{ fontFamily: "Kufam", borderWidth: "4px", marginLeft: "12px" }}
+        style={{
+          fontFamily: "Kufam",
+          borderWidth: "4px",
+          marginLeft: "12px",
+          borderRadius: "20px",
+          border: "1px solid rgb(100, 100, 100)",
+          boxShadow: "3px 3px rgba(0,0,0,.3)",
+        }}
         href={resumePDF}
         download="LyndsiWilliamsResume2023.pdf"
       >
