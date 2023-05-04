@@ -25,10 +25,10 @@ export default function ButtonModal({
   thereIsAButtonUnderThisComponent?: boolean;
   bottomComponent?: boolean;
 }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState<boolean>(false);
 
   // Set the bottomMargin space based on the position of the component
-  const marginBottomCheck = () => {
+  const marginBottomCheck: () => string = () => {
     if (bottomComponent) {
       return "20px";
     } else if (thereIsAButtonUnderThisComponent) {
@@ -36,15 +36,15 @@ export default function ButtonModal({
     } else return "8px";
   };
 
-  // If the title is an element, return the first string from the element
-  const titleTextCheck = () => {
+  // If titleText is an element, return the first string from the element
+  const titleTextCheck: () => string = () => {
     if (typeof titleText === "string") {
       return titleText;
     } else return titleText.props.children[0];
   };
 
   // If the button has multiple lines it needs a bigger borderRadius
-  const borderRadiusCheck = () => {
+  const borderRadiusCheck: () => string = () => {
     if (typeof buttonText === "string") {
       return "20px";
     } else return "26px";

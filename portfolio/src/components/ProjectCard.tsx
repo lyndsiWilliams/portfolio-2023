@@ -21,60 +21,58 @@ const ProjectCard = ({
   title: string;
   secondaryTitle: string | ReactElement<any, any>;
   description: ReactElement<any, any>;
-}) => {
-  return (
-    <div className="project-card">
-      <div className="link-btns">
-        <Link
-          to={primaryLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={
-            secondaryLink
-              ? {
-                  borderTopLeftRadius: "20px",
-                }
-              : {
-                  borderTopLeftRadius: "20px",
-                  borderTopRightRadius: "20px",
-                }
-          }
-        >
-          {primaryLinkText || "Deployment"}
-        </Link>
-        {secondaryLink && (
-          <Link
-            to={secondaryLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ borderTopRightRadius: "20px" }}
-          >
-            Github
-          </Link>
-        )}
-      </div>
+}) => (
+  <div className="project-card">
+    <div className="link-btns">
       <Link
         to={primaryLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="project-img"
+        style={
+          secondaryLink
+            ? {
+                borderTopLeftRadius: "20px",
+              }
+            : {
+                borderTopLeftRadius: "20px",
+                borderTopRightRadius: "20px",
+              }
+        }
       >
-        <img
-          src={image}
-          alt={imageAlt}
-          className="project-img"
-          style={
-            addImageBackground
-              ? { backgroundColor: "white", opacity: ".9" }
-              : undefined
-          }
-        />
+        {primaryLinkText || "Deployment"}
       </Link>
-      <h3>{title}</h3>
-      <h4 style={{ textAlign: "center" }}>{secondaryTitle}</h4>
-      <div className="description">{description}</div>
+      {secondaryLink && (
+        <Link
+          to={secondaryLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ borderTopRightRadius: "20px" }}
+        >
+          Github
+        </Link>
+      )}
     </div>
-  );
-};
+    <Link
+      to={primaryLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-img"
+    >
+      <img
+        src={image}
+        alt={imageAlt}
+        className="project-img"
+        style={
+          addImageBackground
+            ? { backgroundColor: "white", opacity: ".9" }
+            : undefined
+        }
+      />
+    </Link>
+    <h3>{title}</h3>
+    <h4 style={{ textAlign: "center" }}>{secondaryTitle}</h4>
+    <div className="description">{description}</div>
+  </div>
+);
 
 export default ProjectCard;

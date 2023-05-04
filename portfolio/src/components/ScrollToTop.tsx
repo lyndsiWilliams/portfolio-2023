@@ -2,14 +2,16 @@ import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 export default function ScrollToTop() {
-  const trigger = useScrollTrigger({
+  const trigger: boolean = useScrollTrigger({
     target: window ? window : undefined,
     disableHysteresis: true,
     threshold: 100,
   });
 
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const anchor = (
+  const handleClick: (event: React.MouseEvent<HTMLDivElement>) => void = (
+    event: React.MouseEvent<HTMLDivElement>
+  ) => {
+    const anchor: Element | null = (
       (event.target as HTMLDivElement).ownerDocument || document
     ).querySelector("#back-to-top-anchor");
 
