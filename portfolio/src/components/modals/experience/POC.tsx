@@ -41,7 +41,7 @@ const POC: FunctionComponent = () => (
             fontFamily: "'Raleway', sans-serif",
             fontSize: "1.5em",
             fontWeight: "bold",
-            marginTop: "10%",
+            marginTop: "44px",
           }}
         >
           Point of Contact - Baton Rouge LA

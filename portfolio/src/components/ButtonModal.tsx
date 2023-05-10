@@ -87,6 +87,7 @@ export default function ButtonModal({
                 fontSize: "1.5em",
                 fontWeight: "bold",
                 minWidth: "300px",
+                marginTop: "8px",
               }}
             >
               {secondaryTitleText}
