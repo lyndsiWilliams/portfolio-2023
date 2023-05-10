@@ -11,9 +11,10 @@ header {
   width: 100%;
   border-bottom: solid gray 1px;
   margin-bottom: 1%;
+  /* Implement this once header card is separated from navbar
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 99; */
 }
 
 .nav-bar a {
