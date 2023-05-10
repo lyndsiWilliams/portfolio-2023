@@ -13,7 +13,6 @@ const ResumePage: FunctionComponent = () => (
         variant="contained"
         color="secondary"
         style={{
-          fontFamily: "Kufam",
           borderWidth: "4px",
           marginLeft: "12px",
           borderRadius: "20px",

@@ -99,7 +99,6 @@ const Home: FunctionComponent = () => (
               variant="contained"
               color="secondary"
               style={{
-                fontFamily: "Kufam",
                 borderRadius: "20px",
                 border: "1px solid rgb(100, 100, 100)",
                 boxShadow: "3px 3px rgba(0,0,0,.3)",

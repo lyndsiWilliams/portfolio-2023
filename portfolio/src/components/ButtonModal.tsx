@@ -58,7 +58,6 @@ export default function ButtonModal({
         color="secondary"
         onClick={() => setOpen(true)}
         style={{
-          fontFamily: "Kufam",
           borderWidth: "4px",
           borderRadius: borderRadiusCheck(),
           border: "1px solid rgb(100, 100, 100)",

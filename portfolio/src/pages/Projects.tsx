@@ -161,7 +161,6 @@ export const Projects: FunctionComponent = () => (
               variant="contained"
               color="secondary"
               style={{
-                fontFamily: "Kufam",
                 borderWidth: "4px",
                 borderRadius: "20px",
                 border: "1px solid rgb(100, 100, 100)",
