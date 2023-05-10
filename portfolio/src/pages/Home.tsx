@@ -57,7 +57,7 @@ const Home: FunctionComponent = () => (
               fontWeight: "bold",
             }}
           >
-            Click each job for Details!
+            Click each job for details!
           </p>
           <div
             className="experience-btns"
