@@ -29,6 +29,11 @@ import SupersetFeatureWork2023 from "../components/modals/projects/SupersetFeatu
 
 export const Projects: FunctionComponent = () => (
   <>
+    {/* <a href="#2020">{"2020 | "}</a>
+    <a href="#2021">{"2021 | "}</a>
+    <a href="#2022">{"2022 | "}</a>
+    <a href="#2023">{"2023"}</a> */}
+    <div id="2023" />
     <DividerTitle title="2023" />
     <div className="card-container">
       <ProjectCard
@@ -49,6 +54,25 @@ export const Projects: FunctionComponent = () => (
             <SupersetVisualImprovements2023 />
             <SupersetTechDebt2023 />
           </>
+        }
+      />
+      <ProjectCard
+        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
+        primaryLinkText="Check it out on dev.to"
+        image={reactHooks}
+        imageAlt="React symbol + fish hook"
+        title="React hooks: How to convert useState to useReducer"
+        secondaryTitle={
+          <>
+            • Tech blog on dev.to •
+            <br /># webdev # react # tutorial # programming
+          </>
+        }
+        description={
+          <p>
+            A basic example of how to use the useReducer hook for state instead
+            of the useState hook.
+          </p>
         }
       />
       <ProjectCard
@@ -74,11 +98,11 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
+        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-an-advanced-look-at-converting-usestate-to-usereducer-2il6"
         primaryLinkText="Check it out on dev.to"
         image={reactHooks}
         imageAlt="React symbol + fish hook"
-        title="React hooks: How to convert useState to useReducer"
+        title="React hooks: An advanced look at converting useState to useReducer"
         secondaryTitle={
           <>
             • Tech blog on dev.to •
@@ -87,12 +111,13 @@ export const Projects: FunctionComponent = () => (
         }
         description={
           <p>
-            A basic example of how to use the useReducer hook for state instead
-            of the useState hook.
+            A more complex example of how to use the useReducer hook for state
+            instead of the useState hook.
           </p>
         }
       />
     </div>
+    <div id="2022" />
     <DividerTitle title="2022" />
     <div className="card-container">
       <ProjectCard
@@ -137,6 +162,7 @@ export const Projects: FunctionComponent = () => (
         }
       />
     </div>
+    <div id="2021" />
     <DividerTitle title="2021" />
     <div className="card-container">
       <ProjectCard
@@ -206,6 +232,7 @@ export const Projects: FunctionComponent = () => (
         }
       />
     </div>
+    <div id="2020" />
     <DividerTitle title="2020" />
     <div className="card-container">
       <ProjectCard
