@@ -70,7 +70,7 @@ const ProjectCard = ({
       />
     </Link>
     <h3>{title}</h3>
-    <h4 style={{ textAlign: "center" }}>{secondaryTitle}</h4>
+    <h4 style={{ textAlign: "center", margin: "0 16px" }}>{secondaryTitle}</h4>
     <div className="description">{description}</div>
   </div>
 );
