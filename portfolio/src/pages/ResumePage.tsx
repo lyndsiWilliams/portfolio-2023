@@ -26,7 +26,7 @@ const ResumePage: FunctionComponent = () => (
       </Button>
     </h1>
     <iframe
-      src="https://docs.google.com/document/d/e/2PACX-1vRERMPCJxpPmykMYDJBhpiWHkq2_h-846yIRP1Ivti76hCfus1pHb-azUg96dGlVGmxr-h4c6VdFp8i/pub?embedded=true"
+      src="https://docs.google.com/document/d/e/2PACX-1vT_4yXI46Jrov9ooh8C84NGaSiHz0mfp-j2BxIl5DVLqpgdhDLayWwFRtpJ1qO8oNr6I2b1yqHpkozN/pub?embedded=true"
       title="file"
       width="80%"
       height="1900px"
