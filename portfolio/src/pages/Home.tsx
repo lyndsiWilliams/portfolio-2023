@@ -24,7 +24,7 @@ const Home: FunctionComponent = () => (
             applications. With over 2 years of experience in the industry, I
             have a broad understanding of web development technologies,
             including HTML, CSS, functional styling, JavaScript/TypeScript, and
-            React/React Native.
+            Next.js/React/React Native.
           </p>
           <p>
             I am dedicated to writing clean, maintainable code and am always on
