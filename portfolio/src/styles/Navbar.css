@@ -17,7 +17,7 @@ header {
   z-index: 99; */
 }
 
-.nav-bar a {
+a {
   color: #701DD6;
   text-decoration: none;
   transition: opacity .75s;
@@ -25,7 +25,7 @@ header {
   padding: 1% 0;
 }
 
-.nav-bar a:hover {
+a:hover {
   opacity: 0.3;
 }
 
@@ -39,8 +39,8 @@ header {
   margin-bottom: 1%;
 }
 
-.title-card h2 {
-  padding-bottom: 2%;
+.title-card h1 {
+  margin: 28px 0 -4px;
 }
 
 .artifacts {
