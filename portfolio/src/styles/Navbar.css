@@ -17,7 +17,7 @@ header {
   z-index: 99; */
 }
 
-a {
+.nav-bar a, .title-card a {
   color: #701DD6;
   text-decoration: none;
   transition: opacity .75s;
@@ -25,7 +25,7 @@ a {
   padding: 1% 0;
 }
 
-a:hover {
+.nav-bar a:hover, .title-card a:hover {
   opacity: 0.3;
 }
 
