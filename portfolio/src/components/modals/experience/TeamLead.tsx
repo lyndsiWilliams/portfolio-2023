@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
-import ButtonModal from "../../ButtonModal";
+import SquareButtonModal from "../../SquareButtonModal";
 
 const TeamLead: FunctionComponent = () => (
-  <ButtonModal
+  <SquareButtonModal
     buttonText={
       <>
         • Bloom Institute of Technology (formerly Lambda School) •<br />

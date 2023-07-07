@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
-import ButtonModal from "../../ButtonModal";
+import SquareButtonModal from "../../SquareButtonModal";
 
 const Superset: FunctionComponent = () => (
-  <ButtonModal
+  <SquareButtonModal
     buttonText={
       <>
         • The Apache Software Foundation •<br />
