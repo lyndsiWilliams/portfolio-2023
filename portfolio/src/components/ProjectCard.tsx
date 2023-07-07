@@ -5,6 +5,7 @@ const ProjectCard = ({
   primaryLink,
   primaryLinkText,
   secondaryLink,
+  secondaryLinkText,
   image,
   imageAlt,
   addImageBackground,
@@ -15,6 +16,7 @@ const ProjectCard = ({
   primaryLink: string;
   primaryLinkText?: string;
   secondaryLink?: string;
+  secondaryLinkText?: string;
   image: string;
   imageAlt: string;
   addImageBackground?: boolean;
@@ -48,7 +50,7 @@ const ProjectCard = ({
           rel="noopener noreferrer"
           style={{ borderTopRightRadius: "20px" }}
         >
-          Github
+          {secondaryLinkText || "Github"}
         </Link>
       )}
     </div>

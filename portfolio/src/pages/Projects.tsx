@@ -57,14 +57,16 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
-        primaryLinkText="Check it out on dev.to"
+        primaryLink="https://hackernoon.com/migrating-from-usestate-to-usereducer-in-react-hooks"
+        primaryLinkText="Hackernoon"
+        secondaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
+        secondaryLinkText="dev.to"
         image={reactHooks}
         imageAlt="React symbol + fish hook"
         title="React hooks: How to convert useState to useReducer"
         secondaryTitle={
           <>
-            • Tech blog on dev.to •
+            • Tech blog on Hackernoon and dev.to •
             <br /># webdev # react # tutorial # programming
           </>
         }
@@ -98,14 +100,16 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-an-advanced-look-at-converting-usestate-to-usereducer-2il6"
-        primaryLinkText="Check it out on dev.to"
+        primaryLink="https://hackernoon.com/an-advanced-approach-to-migrating-from-usestate-to-usereducer"
+        primaryLinkText="Hackernoon"
+        secondaryLink="https://dev.to/lyndsiwilliams/react-hooks-an-advanced-look-at-converting-usestate-to-usereducer-2il6"
+        secondaryLinkText="dev.to"
         image={reactHooks}
         imageAlt="React symbol + fish hook"
         title="React hooks: An advanced look at converting useState to useReducer"
         secondaryTitle={
           <>
-            • Tech blog on dev.to •
+            • Tech blog on Hackernoon and dev.to •
             <br /># webdev # react # tutorial # programming
           </>
         }
@@ -142,15 +146,17 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/superset-testing-and-enzyme-to-rtl-conversion-1j6a"
-        primaryLinkText="Check it out on dev.to"
+        primaryLink="https://hackernoon.com/testing-apache-superset-migrating-from-enzyme-to-rtl-for-improved-testing"
+        primaryLinkText="Hackernoon"
+        secondaryLink="https://dev.to/lyndsiwilliams/superset-testing-and-enzyme-to-rtl-conversion-1j6a"
+        secondaryLinkText="dev.to"
         image={superset}
         imageAlt="Apache Supserset logo"
         addImageBackground
         title="Apache Superset: Testing and Enzyme to RTL conversion"
         secondaryTitle={
           <>
-            • Tech blog on dev.to •
+            • Tech blog on Hackernoon and dev.to •
             <br /># testing # react # opensource # webdev
           </>
         }
