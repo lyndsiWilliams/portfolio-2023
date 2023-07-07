@@ -30,8 +30,8 @@ const Home: FunctionComponent = () => (
             creating user-friendly and visually appealing websites and
             applications. With over 2 years of experience in the industry, I
             have a broad understanding of web development technologies,
-            including HTML, CSS, functional styling, JavaScript/TypeScript, and
-            Next.js/React/React Native.
+            including HTML, CSS, functional styling, JavaScript, TypeScript,
+            Next.js, React, and React Native.
           </p>
           <p>
             I am dedicated to writing clean, maintainable code and am always on
@@ -46,7 +46,7 @@ const Home: FunctionComponent = () => (
           <p>
             React, React Native, Next.js, Vite, Redux, React Context, React
             Testing Library, Jest, Cypress, Javascript, Typescript, HTML, CSS,
-            LESS/SASS, Emotion
+            LESS/SASS, Emotion, Tailwind CSS
           </p>
           <h4>Back end</h4>
           <p>Python, NodeJS, Express, SQL</p>
@@ -69,7 +69,14 @@ const Home: FunctionComponent = () => (
           <div
             className="experience-btns"
             data-testid="experience-btns"
-            style={{ marginBottom: "48px" }}
+            style={{
+              marginBottom: "48px",
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              alignItems: "flex-start",
+              justifyContent: "space-between",
+            }}
           >
             <Superset />
             <Preset />
