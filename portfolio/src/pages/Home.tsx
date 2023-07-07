@@ -8,14 +8,21 @@ import POC from "../components/modals/experience/POC";
 import Superset from "../components/modals/experience/Superset";
 // Styling
 import "../styles/Home.css";
-import meBlue from "../images/meBlue.jpg";
+import me from "../images/me.png";
 import lambdaBadge from "../images/lambdaBadge.png";
 import DividerTitle from "../components/DividerTitle";
 
 const Home: FunctionComponent = () => (
   <div className="card-wrapper">
     <section className="intro-card">
-      <img src={meBlue} alt="Lyndsi Kay Williams" className="home-pic" />
+      <img
+        src={me}
+        alt="Lyndsi Kay Williams"
+        className="home-pic"
+        style={{
+          backgroundImage: "linear-gradient(to left, black, #ddd7ff, #ddd7ff)",
+        }}
+      />
       <div className="text-wrapper">
         <section className="intro-text" style={{ marginBottom: "48px" }}>
           <p>
