@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
-import ButtonModal from "../../ButtonModal";
+import SquareButtonModal from "../../SquareButtonModal";
 
 const POC: FunctionComponent = () => (
-  <ButtonModal
+  <SquareButtonModal
     buttonText={
       <>
         • PRO Unlimited (EA) •<br />

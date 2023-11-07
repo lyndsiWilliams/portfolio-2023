@@ -8,14 +8,21 @@ import POC from "../components/modals/experience/POC";
 import Superset from "../components/modals/experience/Superset";
 // Styling
 import "../styles/Home.css";
-import meBlue from "../images/meBlue.jpg";
+import me from "../images/me.png";
 import lambdaBadge from "../images/lambdaBadge.png";
 import DividerTitle from "../components/DividerTitle";
 
 const Home: FunctionComponent = () => (
   <div className="card-wrapper">
     <section className="intro-card">
-      <img src={meBlue} alt="Lyndsi Kay Williams" className="home-pic" />
+      <img
+        src={me}
+        alt="Lyndsi Kay Williams"
+        className="home-pic"
+        style={{
+          backgroundImage: "linear-gradient(to left, black, #ddd7ff, #ddd7ff)",
+        }}
+      />
       <div className="text-wrapper">
         <section className="intro-text" style={{ marginBottom: "48px" }}>
           <p>
@@ -23,8 +30,8 @@ const Home: FunctionComponent = () => (
             creating user-friendly and visually appealing websites and
             applications. With over 2 years of experience in the industry, I
             have a broad understanding of web development technologies,
-            including HTML, CSS, functional styling, JavaScript/TypeScript, and
-            Next.js/React/React Native.
+            including HTML, CSS, functional styling, JavaScript, TypeScript,
+            Next.js, React, and React Native.
           </p>
           <p>
             I am dedicated to writing clean, maintainable code and am always on
@@ -39,7 +46,7 @@ const Home: FunctionComponent = () => (
           <p>
             React, React Native, Next.js, Vite, Redux, React Context, React
             Testing Library, Jest, Cypress, Javascript, Typescript, HTML, CSS,
-            LESS/SASS, Emotion
+            LESS/SASS, Emotion, Tailwind CSS
           </p>
           <h4>Back end</h4>
           <p>Python, NodeJS, Express, SQL</p>
@@ -65,7 +72,14 @@ const Home: FunctionComponent = () => (
           <div
             className="experience-btns"
             data-testid="experience-btns"
-            style={{ marginBottom: "48px" }}
+            style={{
+              marginBottom: "48px",
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              alignItems: "flex-start",
+              justifyContent: "space-between",
+            }}
           >
             <Superset />
             <Preset />

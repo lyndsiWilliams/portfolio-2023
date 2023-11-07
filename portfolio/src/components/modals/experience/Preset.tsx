@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
-import ButtonModal from "../../ButtonModal";
+import SquareButtonModal from "../../SquareButtonModal";
 
 const Preset: FunctionComponent = () => (
-  <ButtonModal
+  <SquareButtonModal
     buttonText={
       <>
         • Preset •<br />

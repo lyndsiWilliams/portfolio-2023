@@ -104,7 +104,7 @@ export const Projects: FunctionComponent = () => (
         title="React hooks: An advanced look at converting useState to useReducer"
         secondaryTitle={
           <>
-            • Tech blog on dev.to •
+            • Tech blog on Hackernoon and dev.to •
             <br /># webdev # react # tutorial # programming
           </>
         }
@@ -145,7 +145,7 @@ export const Projects: FunctionComponent = () => (
         title="React hooks: How to convert useState to useReducer"
         secondaryTitle={
           <>
-            • Tech blog on dev.to •
+            • Tech blog on Hackernoon and dev.to •
             <br /># webdev # react # tutorial # programming
           </>
         }
@@ -182,15 +182,17 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/superset-testing-and-enzyme-to-rtl-conversion-1j6a"
-        primaryLinkText="Check it out on dev.to"
+        primaryLink="https://hackernoon.com/testing-apache-superset-migrating-from-enzyme-to-rtl-for-improved-testing"
+        primaryLinkText="Hackernoon"
+        secondaryLink="https://dev.to/lyndsiwilliams/superset-testing-and-enzyme-to-rtl-conversion-1j6a"
+        secondaryLinkText="dev.to"
         image={superset}
         imageAlt="Apache Supserset logo"
         addImageBackground
         title="Apache Superset: Testing and Enzyme to RTL conversion"
         secondaryTitle={
           <>
-            • Tech blog on dev.to •
+            • Tech blog on Hackernoon and dev.to •
             <br /># testing # react # opensource # webdev
           </>
         }
