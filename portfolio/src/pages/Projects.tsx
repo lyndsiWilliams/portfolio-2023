@@ -9,6 +9,7 @@ import superset from "../images/superset.png";
 import reactHooks from "../images/reactHooks.png";
 import amythio from "../images/amythio.png";
 import useReducerForm from "../images/useReducerForm.png";
+import rvsDOM from "../images/rvsDOM.png";
 // Componenets
 import { Button } from "@mui/material";
 import DividerTitle from "../components/DividerTitle";
@@ -57,11 +58,50 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
+        primaryLink="https://dev.to/lyndsiwilliams/apache-superset-installing-locally-is-easy-using-the-makefile-4ofi"
+        primaryLinkText="Check it out on dev.to"
+        image={superset}
+        imageAlt="Apache Supserset logo"
+        addImageBackground
+        title="Apache Superset: Installing locally is easy using the makefile"
+        secondaryTitle={
+          <>
+            • Tech blog on dev.to •
+            <br /># webdev # opensource # react # python
+          </>
+        }
+        description={
+          <p>
+            In this article, I'll guide you through a streamlined local
+            installation of Apache Superset using the makefile.
+          </p>
+        }
+      />
+      <ProjectCard
+        primaryLink="https://dev.to/lyndsiwilliams/real-dom-virtual-dom-shadow-dom-whats-the-difference-32ni"
+        primaryLinkText="Check it out on dev.to"
+        image={rvsDOM}
+        imageAlt="DOM comparison banner"
+        title="Real DOM, Virtual DOM, Shadow DOM: What's the Difference?"
+        secondaryTitle={
+          <>
+            • Tech blog on dev.to •
+            <br /># webdev # react # frontend # performance
+          </>
+        }
+        description={
+          <p>
+            Take a dive to see how the different types of DOM work together to
+            create a clean, performant Document Object Model.
+          </p>
+        }
+      />
+      <ProjectCard
+        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-an-advanced-look-at-converting-usestate-to-usereducer-2il6"
         primaryLinkText="Check it out on dev.to"
         image={reactHooks}
         imageAlt="React symbol + fish hook"
-        title="React hooks: How to convert useState to useReducer"
+        title="React hooks: An advanced look at converting useState to useReducer"
         secondaryTitle={
           <>
             • Tech blog on dev.to •
@@ -70,8 +110,8 @@ export const Projects: FunctionComponent = () => (
         }
         description={
           <p>
-            A basic example of how to use the useReducer hook for state instead
-            of the useState hook.
+            A more complex example of how to use the useReducer hook for state
+            instead of the useState hook.
           </p>
         }
       />
@@ -98,11 +138,11 @@ export const Projects: FunctionComponent = () => (
         }
       />
       <ProjectCard
-        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-an-advanced-look-at-converting-usestate-to-usereducer-2il6"
+        primaryLink="https://dev.to/lyndsiwilliams/react-hooks-how-to-convert-usestate-to-usereducer-5f64"
         primaryLinkText="Check it out on dev.to"
         image={reactHooks}
         imageAlt="React symbol + fish hook"
-        title="React hooks: An advanced look at converting useState to useReducer"
+        title="React hooks: How to convert useState to useReducer"
         secondaryTitle={
           <>
             • Tech blog on dev.to •
@@ -111,8 +151,8 @@ export const Projects: FunctionComponent = () => (
         }
         description={
           <p>
-            A more complex example of how to use the useReducer hook for state
-            instead of the useState hook.
+            A basic example of how to use the useReducer hook for state instead
+            of the useState hook.
           </p>
         }
       />
