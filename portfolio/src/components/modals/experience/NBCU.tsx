@@ -20,7 +20,7 @@ const NBCUniversal: FunctionComponent = () => (
     secondaryTitleTextAlign="center"
     experienceContent={
       <p>
-        Coming Soon! Feel free to{" "}
+        Job description coming soon! Feel free to{" "}
         <Link
           to="mailto:lyndsikaywilliams@gmail.com"
           target="_blank"
