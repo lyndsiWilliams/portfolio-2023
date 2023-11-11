@@ -9,7 +9,7 @@ const POC: FunctionComponent = () => (
     bottomButtonText="Electronic Arts (PRO Unlimited)"
     titleText={
       <>
-        PRO Unlimited (Electronic Arts)
+        Electronic Arts (PRO Unlimited)
         <br />
         March 2011 - March 2012, July 2012 - June 2013
       </>

@@ -6,7 +6,6 @@ const Superset: FunctionComponent = () => (
   <SquareButtonModal
     topButtonText="Apache Superset Committer"
     image={superset}
-    imageNeedsSomeHeight
     bottomButtonText="The Apache Software Foundation"
     titleText={
       <>

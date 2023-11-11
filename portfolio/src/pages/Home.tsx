@@ -6,6 +6,7 @@ import Preset from "../components/modals/experience/Preset";
 import TeamLead from "../components/modals/experience/TeamLead";
 import POC from "../components/modals/experience/POC";
 import Superset from "../components/modals/experience/Superset";
+import NBCUniversal from "../components/modals/experience/NBCU";
 // Styling
 import "../styles/Home.css";
 import me from "../images/me.png";
@@ -81,6 +82,7 @@ const Home: FunctionComponent = () => (
               justifyContent: "space-between",
             }}
           >
+            <NBCUniversal />
             <Superset />
             <Preset />
             <TeamLead />
