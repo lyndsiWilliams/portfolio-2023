@@ -1,17 +1,12 @@
 import { FunctionComponent } from "react";
+import electronicArts from "../../../images/electronicArts.png";
 import SquareButtonModal from "../../SquareButtonModal";
 
 const POC: FunctionComponent = () => (
   <SquareButtonModal
-    buttonText={
-      <>
-        • PRO Unlimited (EA) •<br />
-        Quality Assurance Tester
-        <br />
-        Point of Contact
-      </>
-    }
-    noBullets
+    topButtonText="Quality Assurance Tester / Point of Contact"
+    image={electronicArts}
+    bottomButtonText="Electronic Arts (PRO Unlimited)"
     titleText={
       <>
         PRO Unlimited (Electronic Arts)

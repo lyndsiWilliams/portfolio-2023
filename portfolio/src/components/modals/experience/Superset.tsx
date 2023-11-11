@@ -1,15 +1,13 @@
 import { FunctionComponent } from "react";
+import superset from "../../../images/superset.png";
 import SquareButtonModal from "../../SquareButtonModal";
 
 const Superset: FunctionComponent = () => (
   <SquareButtonModal
-    buttonText={
-      <>
-        • The Apache Software Foundation •<br />
-        Apache Superset Committer
-      </>
-    }
-    noBullets
+    topButtonText="Apache Superset Committer"
+    image={superset}
+    imageNeedsSomeHeight
+    bottomButtonText="The Apache Software Foundation"
     titleText={
       <>
         The Apache Software Foundation

@@ -1,15 +1,13 @@
 import { FunctionComponent } from "react";
+import preset from "../../../images/preset.png";
 import SquareButtonModal from "../../SquareButtonModal";
 
 const Preset: FunctionComponent = () => (
   <SquareButtonModal
-    buttonText={
-      <>
-        • Preset •<br />
-        Full Stack Software Engineer
-      </>
-    }
-    noBullets
+    topButtonText="Full Stack Software Engineer"
+    image={preset}
+    imageNeedsSomeHeight
+    bottomButtonText="Preset"
     titleText={
       <>
         Preset

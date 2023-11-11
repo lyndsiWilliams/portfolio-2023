@@ -1,15 +1,12 @@
 import { FunctionComponent } from "react";
+import lambdaSchool from "../../../images/lambdaSchool.png";
 import SquareButtonModal from "../../SquareButtonModal";
 
 const TeamLead: FunctionComponent = () => (
   <SquareButtonModal
-    buttonText={
-      <>
-        • Bloom Institute of Technology (formerly Lambda School) •<br />
-        Team Lead
-      </>
-    }
-    noBullets
+    topButtonText="Team Lead"
+    image={lambdaSchool}
+    bottomButtonText="Bloom Institute of Technology (formerly Lambda School)"
     titleText={
       <>
         Bloom Institute of Technology (formerly Lambda School)
