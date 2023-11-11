@@ -7,7 +7,7 @@ const TeamLead: FunctionComponent = () => (
     topButtonText="Team Lead"
     image={formerlyLambda}
     imageNeedsSomeHeight
-    bottomButtonText="Bloom Institute of Technology (formerly Lambda School)"
+    bottomButtonText="Bloom Institute of Technology"
     titleText={
       <>
         Bloom Institute of Technology (formerly Lambda School)
