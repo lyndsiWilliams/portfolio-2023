@@ -11,8 +11,7 @@ type StringFunction = () => string;
 
 export default function SquareButtonModal({
   titleText,
-  topButtonText,
-  bottomButtonText,
+  buttonText,
   image,
   imageAlt,
   secondaryTitleText,
@@ -22,8 +21,7 @@ export default function SquareButtonModal({
   bottomComponent,
   imageNeedsSomeHeight,
 }: {
-  topButtonText?: string;
-  bottomButtonText?: string;
+  buttonText?: string;
   titleText: string | ReactElement<any, any>;
   image?: string;
   imageAlt?: string;
@@ -72,7 +70,9 @@ export default function SquareButtonModal({
     img {
       background-color: white;
       width: 92%;
+      border-radius: 6px;
       padding: ${imageNeedsSomeHeight ? `8% 0` : undefined};
+      margin-bottom: 12px;
     }
   `;
 
@@ -84,9 +84,8 @@ export default function SquareButtonModal({
         color="secondary"
         onClick={() => setOpen(true)}
       >
-        <p>{topButtonText && topButtonText}</p>
+        <p>{buttonText && buttonText}</p>
         {image && <img src={image} alt={imageAlt} />}
-        <p>{bottomButtonText && bottomButtonText}</p>
       </StyledButton>
       <BootstrapDialog onClose={() => setOpen(false)} open={open}>
         <BootstrapDialogTitle

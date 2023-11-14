@@ -5,10 +5,9 @@ import SquareButtonModal from "../../SquareButtonModal";
 
 const NBCUniversal: FunctionComponent = () => (
   <SquareButtonModal
-    topButtonText="Frontend Engineer"
+    buttonText="Frontend Engineer"
     image={nbcUniversal}
     imageNeedsSomeHeight
-    bottomButtonText="NBCUniversal (Fincons)"
     titleText={
       <>
         NBCUniversal (Fincons)

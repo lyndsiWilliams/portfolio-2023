@@ -4,9 +4,8 @@ import SquareButtonModal from "../../SquareButtonModal";
 
 const Superset: FunctionComponent = () => (
   <SquareButtonModal
-    topButtonText="Apache Superset Committer"
+    buttonText="Apache Superset Committer"
     image={superset}
-    bottomButtonText="The Apache Software Foundation"
     titleText={
       <>
         The Apache Software Foundation

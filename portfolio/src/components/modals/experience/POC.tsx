@@ -4,9 +4,8 @@ import SquareButtonModal from "../../SquareButtonModal";
 
 const POC: FunctionComponent = () => (
   <SquareButtonModal
-    topButtonText="Quality Assurance Tester / Point of Contact"
+    buttonText="Quality Assurance Tester / Point of Contact"
     image={electronicArts}
-    bottomButtonText="Electronic Arts (PRO Unlimited)"
     titleText={
       <>
         Electronic Arts (PRO Unlimited)

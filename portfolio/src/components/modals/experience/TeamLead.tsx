@@ -4,10 +4,9 @@ import SquareButtonModal from "../../SquareButtonModal";
 
 const TeamLead: FunctionComponent = () => (
   <SquareButtonModal
-    topButtonText="Team Lead"
+    buttonText="Team Lead"
     image={formerlyLambda}
     imageNeedsSomeHeight
-    bottomButtonText="Bloom Institute of Technology"
     titleText={
       <>
         Bloom Institute of Technology (formerly Lambda School)

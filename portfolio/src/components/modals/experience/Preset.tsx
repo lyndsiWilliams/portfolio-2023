@@ -4,10 +4,9 @@ import SquareButtonModal from "../../SquareButtonModal";
 
 const Preset: FunctionComponent = () => (
   <SquareButtonModal
-    topButtonText="Full Stack Software Engineer"
+    buttonText="Full Stack Software Engineer"
     image={preset}
     imageNeedsSomeHeight
-    bottomButtonText="Preset"
     titleText={
       <>
         Preset
