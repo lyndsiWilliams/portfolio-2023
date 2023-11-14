@@ -72,7 +72,9 @@ export default function SquareButtonModal({
       width: 92%;
       border-radius: 6px;
       padding: ${imageNeedsSomeHeight ? `8% 0` : undefined};
-      margin-bottom: 12px;
+      padding-left: 4px;
+      padding-right: 4px;
+      margin-bottom: 8px;
     }
   `;
 
