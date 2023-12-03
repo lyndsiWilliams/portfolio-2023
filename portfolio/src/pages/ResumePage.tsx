@@ -8,13 +8,13 @@ import resumePDF from "../downloadableContent/LyndsiWilliamsResume2023.pdf";
 const ResumePage: FunctionComponent = () => (
   <div style={{ marginTop: "1%" }}>
     <h1 style={{ fontSize: "24px" }}>
-      Want a copy? Click here to download a .pdf of my resume:
+      Want a copy? Click
       <Button
         variant="contained"
         color="secondary"
         style={{
           borderWidth: "4px",
-          marginLeft: "12px",
+          margin: "0 12px 0 8px",
           borderRadius: "20px",
           border: "1px solid rgb(100, 100, 100)",
           boxShadow: "3px 3px rgba(0,0,0,.3)",
@@ -22,8 +22,9 @@ const ResumePage: FunctionComponent = () => (
         href={resumePDF}
         download="LyndsiWilliamsResume2023.pdf"
       >
-        Download
+        here
       </Button>
+      to download a .pdf of my resume
     </h1>
     <iframe
       src="https://docs.google.com/document/d/e/2PACX-1vT_4yXI46Jrov9ooh8C84NGaSiHz0mfp-j2BxIl5DVLqpgdhDLayWwFRtpJ1qO8oNr6I2b1yqHpkozN/pub?embedded=true"
