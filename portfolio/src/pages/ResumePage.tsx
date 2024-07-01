@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 // For some reason TS couldn't recognize the PDF import but it works.
 // @ts-ignore
-import resumePDF from "../downloadableContent/LyndsiWilliamsResume2023.pdf";
+import resumePDF from "../downloadableContent/LyndsiWilliamsResume2024.pdf";
 
 const ResumePage: FunctionComponent = () => (
   <div style={{ marginTop: "1%" }}>
@@ -20,14 +20,14 @@ const ResumePage: FunctionComponent = () => (
           boxShadow: "3px 3px rgba(0,0,0,.3)",
         }}
         href={resumePDF}
-        download="LyndsiWilliamsResume2023.pdf"
+        download="LyndsiWilliamsResume2024.pdf"
       >
         here
       </Button>
       to download a .pdf of my resume
     </h1>
     <iframe
-      src="https://docs.google.com/document/d/e/2PACX-1vT_4yXI46Jrov9ooh8C84NGaSiHz0mfp-j2BxIl5DVLqpgdhDLayWwFRtpJ1qO8oNr6I2b1yqHpkozN/pub?embedded=true"
+      src="https://docs.google.com/document/d/e/2PACX-1vTtancVjkPi4LBUnMa75z4gzWafttJg7RcZck94qmFIzSZVi7zpgOzOZZVSHgMrZtJhedpyc_VvQey5/pub?embedded=true"
       title="file"
       width="80%"
       height="1900px"
