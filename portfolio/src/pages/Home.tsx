@@ -29,7 +29,7 @@ const Home: FunctionComponent = () => (
           <p>
             I am a detail-oriented frontend software engineer with a passion for
             creating user-friendly and visually appealing websites and
-            applications. With over 2 years of experience in the industry, I
+            applications. With over 3 years of experience in the industry, I
             have a broad understanding of web development technologies,
             including HTML, CSS, functional styling, JavaScript, TypeScript,
             Next.js, React, and React Native.
