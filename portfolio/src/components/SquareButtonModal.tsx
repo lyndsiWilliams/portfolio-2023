@@ -110,6 +110,7 @@ export default function SquareButtonModal({
                 fontWeight: "bold",
                 minWidth: "300px",
                 marginTop: "8px",
+                lineHeight: "1.1",
               }}
             >
               {secondaryTitleText}

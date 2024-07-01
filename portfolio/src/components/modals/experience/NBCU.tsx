@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import { Link } from "react-router-dom";
 import nbcUniversal from "../../../images/nbcUniversal.jpeg";
 import SquareButtonModal from "../../SquareButtonModal";
 
@@ -12,23 +11,39 @@ const NBCUniversal: FunctionComponent = () => (
       <>
         NBCUniversal (Fincons)
         <br />
-        August 2023 - Present
+        August 2023 - July 2024
       </>
     }
-    secondaryTitleText="Frontend Engineer - Remote"
+    secondaryTitleText="Lead Superset Engineer / Frontend Software Engineer - Remote"
     secondaryTitleTextAlign="center"
     experienceContent={
-      <p>
-        Job description coming soon! Feel free to{" "}
-        <Link
-          to="mailto:lyndsikaywilliams@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          contact me
-        </Link>{" "}
-        with any inquiries 😁
-      </p>
+      <>
+        <p>
+          • Led a team of frontend developers in creating a custom version of
+          Apache Superset as an interim solution during the development of a new
+          telemetry tool
+        </p>
+        <p>
+          • Planned and designed custom Apache Superset features in Figma to
+          meet over 200 stakeholder requirements
+        </p>
+        <p>
+          • Authored comprehensive documentation for using the custom version of
+          Apache Superset
+        </p>
+        <p>
+          • Developed and enforced a testing plan to ensure production safety
+          during new deployments
+        </p>
+        <p>
+          • Managed stakeholder expectations and timelines for feature
+          development
+        </p>
+        <p>
+          • Developed a custom Video Experience telemetry tool, achieving a 75%
+          cost reduction compared to the previous solution
+        </p>
+      </>
     }
   />
 );
