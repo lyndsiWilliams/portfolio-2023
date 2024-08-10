@@ -10,6 +10,7 @@ import reactHooks from "../images/reactHooks.png";
 import amythio from "../images/amythio.png";
 import useReducerForm from "../images/useReducerForm.png";
 import rvsDOM from "../images/rvsDOM.png";
+import scrollingBanner from "../images/scrollingBanner.png";
 // Componenets
 import { Button } from "@mui/material";
 import DividerTitle from "../components/DividerTitle";
@@ -34,6 +35,31 @@ export const Projects: FunctionComponent = () => (
     <a href="#2021">{"2021 | "}</a>
     <a href="#2022">{"2022 | "}</a>
     <a href="#2023">{"2023"}</a> */}
+    <div id="2024" />
+    <DividerTitle title="2024" />
+    <div className="card-container">
+      <ProjectCard
+        primaryLink="https://scrolling-banner.vercel.app/"
+        secondaryLink="https://github.com/lyndsiWilliams/scrolling-banner"
+        image={scrollingBanner}
+        imageAlt="scrolling banner"
+        title="Scrolling Image Banner"
+        secondaryTitle="Vite | React | React Hooks | TypeScript | Emotion |
+          Material UI | Vercel | ImageKit"
+        description={
+          <>
+            <p>
+              A scrolling image banner that pauses when hovered over, resuming
+              once the cursor moves away.
+            </p>
+            <p>
+              Clicking on any image will open a full-screen modal display of
+              that image.
+            </p>
+          </>
+        }
+      />
+    </div>
     <div id="2023" />
     <DividerTitle title="2023" />
     <div className="card-container">
