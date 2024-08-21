@@ -50,7 +50,7 @@ const Home: FunctionComponent = () => (
             LESS/SASS, Emotion, Tailwind CSS
           </p>
           <h4>Back end</h4>
-          <p>Python, NodeJS, Express, SQL</p>
+          <p>Python, C#, .NET Framework, NodeJS, Express, SQL</p>
           <h4>Other relative skills</h4>
           <p>
             RESTful API, GraphQL, interface design, component design, Figma,
