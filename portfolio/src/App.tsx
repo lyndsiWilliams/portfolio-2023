@@ -6,23 +6,28 @@ import "./App.css";
 // Components
 import { Navbar } from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 
 // Lazy load route components
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const ResumePage = lazy(() => import("./pages/ResumePage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const App: FunctionComponent = () => (
   <div className="App">
     <Router>
       <Navbar />
-      <Suspense fallback={<div style={{ padding: "20px", textAlign: "center" }}>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<ResumePage />} />
-        </Routes>
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<div style={{ padding: "20px", textAlign: "center" }}>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </ErrorBoundary>
       <ScrollToTop />
     </Router>
   </div>
