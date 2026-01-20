@@ -30,6 +30,7 @@ const ProjectCard = ({
         to={primaryLink}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`${title} primary link`}
         style={
           secondaryLink
             ? {
@@ -48,6 +49,7 @@ const ProjectCard = ({
           to={secondaryLink}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`${title} secondary link`}
           style={{ borderTopRightRadius: "20px" }}
         >
           {secondaryLinkText || "Github"}
@@ -64,6 +66,8 @@ const ProjectCard = ({
         src={image}
         alt={imageAlt}
         className="project-img"
+        loading="lazy"
+        decoding="async"
         style={
           addImageBackground
             ? { backgroundColor: "white", opacity: ".9" }

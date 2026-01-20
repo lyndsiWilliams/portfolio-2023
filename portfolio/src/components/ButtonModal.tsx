@@ -49,6 +49,9 @@ export default function ButtonModal({
       return "20px";
     } else return "26px";
   };
+  
+  const dialogId = `${titleTextCheck().split(" ").join("")}-dialog`;
+  const descriptionId = `${dialogId}-description`;
 
   return (
     <div style={{ marginTop: "2%" }}>
@@ -57,6 +60,10 @@ export default function ButtonModal({
         variant="contained"
         color="secondary"
         onClick={() => setOpen(true)}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        aria-controls={dialogId}
+        aria-label={`Open details for ${titleTextCheck()}`}
         style={{
           borderWidth: "4px",
           borderRadius: borderRadiusCheck(),
@@ -67,18 +74,24 @@ export default function ButtonModal({
       >
         {noBullets ? buttonText : `• ${buttonText} •`}
       </Button>
-      <BootstrapDialog onClose={() => setOpen(false)} open={open}>
+      <BootstrapDialog
+        onClose={() => setOpen(false)}
+        open={open}
+        aria-labelledby={`${dialogId}-title`}
+        aria-describedby={descriptionId}
+      >
         <BootstrapDialogTitle
           id="customized-dialog-title"
           onClose={() => setOpen(false)}
         >
           <span
             style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "bold" }}
+            id={`${dialogId}-title`}
           >
             {titleText}
           </span>
         </BootstrapDialogTitle>
-        <DialogContent dividers>
+        <DialogContent dividers id={descriptionId}>
           <div className="experience-bullets">
             <p
               style={{
