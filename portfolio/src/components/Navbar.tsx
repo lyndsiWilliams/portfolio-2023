@@ -30,42 +30,42 @@ export const Navbar = () => (
     </nav>
     <div className="title-card">
       <div className="artifacts" data-testid="artifacts" aria-label="Social links">
-        <Link
-          to="https://www.linkedin.com/in/lyndsiwilliams/"
+        <a
+          href="https://www.linkedin.com/in/lyndsiwilliams/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn profile"
         >
           LinkedIn
-        </Link>
-        |
-        <Link
-          to="https://github.com/lyndsiWilliams"
+        </a>{" "}
+        |{" "}
+        <a
+          href="https://github.com/lyndsiWilliams"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub profile"
         >
           GitHub
-        </Link>
-        | <Link to="/resume">Resume</Link> |
-        <Link
-          to="mailto:lyndsikaywilliams@gmail.com"
+        </a>{" "}
+        | <Link to="/resume">Resume</Link> |{" "}
+        <a
+          href="mailto:lyndsikaywilliams@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Email
-        </Link>
+        </a>
       </div>
       <h1>Lyndsi Kay Williams</h1>
       <h2>Frontend Software Engineer</h2>
       <StyledButton>
-        <Link
-          to="https://calendly.com/lyndsiwilliams/chat"
+        <a
+          href="https://calendly.com/lyndsiwilliams/chat"
           target="_blank"
           rel="noopener noreferrer"
         >
           Schedule a quick chat
-        </Link>
+        </a>
       </StyledButton>
     </div>
   </header>
