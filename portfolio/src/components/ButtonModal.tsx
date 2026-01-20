@@ -49,7 +49,7 @@ export default function ButtonModal({
       return "20px";
     } else return "26px";
   };
-  
+
   const dialogId = `${titleTextCheck().split(" ").join("")}-dialog`;
   const descriptionId = `${dialogId}-description`;
 
@@ -81,12 +81,11 @@ export default function ButtonModal({
         aria-describedby={descriptionId}
       >
         <BootstrapDialogTitle
-          id="customized-dialog-title"
+          id={`${dialogId}-title`}
           onClose={() => setOpen(false)}
         >
           <span
             style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "bold" }}
-            id={`${dialogId}-title`}
           >
             {titleText}
           </span>
