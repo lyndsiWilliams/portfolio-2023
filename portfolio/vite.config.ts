@@ -1,17 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@components': path.resolve(__dirname, './src/components'),
-      '@pages': path.resolve(__dirname, './src/pages'),
-      '@styles': path.resolve(__dirname, './src/styles'),
-      '@images': path.resolve(__dirname, './src/images'),
-      '@downloadableContent': path.resolve(__dirname, './src/downloadableContent'),
+      '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
+      '@styles': fileURLToPath(new URL('./src/styles', import.meta.url)),
+      '@images': fileURLToPath(new URL('./src/images', import.meta.url)),
+      '@downloadableContent': fileURLToPath(new URL('./src/downloadableContent', import.meta.url)),
     },
   },
   server: {
