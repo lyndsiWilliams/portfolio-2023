@@ -414,3 +414,5 @@ export const Projects: FunctionComponent = () => (
     </div>
   </>
 );
+
+export default Projects;
