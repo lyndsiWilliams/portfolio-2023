@@ -24,16 +24,17 @@ const StyledButton = styled.button`
 
 export const Navbar = () => (
   <header>
-    <div className="nav-bar" id="back-to-top-anchor">
+    <nav className="nav-bar" id="back-to-top-anchor" aria-label="Main navigation">
       <Link to="/">About Me</Link>
       <Link to="/projects">Projects</Link>
-    </div>
+    </nav>
     <div className="title-card">
-      <div className="artifacts" data-testid="artifacts">
+      <div className="artifacts" data-testid="artifacts" aria-label="Social links">
         <Link
           to="https://www.linkedin.com/in/lyndsiwilliams/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
         >
           LinkedIn
         </Link>
@@ -42,6 +43,7 @@ export const Navbar = () => (
           to="https://github.com/lyndsiWilliams"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub profile"
         >
           GitHub
         </Link>

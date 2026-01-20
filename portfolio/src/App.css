@@ -8,6 +8,28 @@ html {
   font-size: 1.1em;
 }
 
+/* Skip to content link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Ensure focus visible for keyboard users */
+*:focus-visible {
+  outline: 2px solid #701DD6;
+  outline-offset: 2px;
+}
+
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 3em;
