@@ -48,7 +48,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
-    "prepare": "husky install .husky"
+    "prepare": "husky install .husky || true"
   },
   "browserslist": {
     "production": [
