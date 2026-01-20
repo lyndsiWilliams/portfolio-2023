@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd portfolio
+npm run lint
+npm run build -- --clearScreen=false

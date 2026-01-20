@@ -13,7 +13,7 @@
     "@mui/material": "^5.15.20",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.22.3",
+    "react-router-dom": "^7.0.2",
     "web-vitals": "^4.1.0"
   },
   "devDependencies": {
@@ -32,6 +32,7 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
     "prettier": "^3.3.2",
     "sharp": "^0.33.4",
     "typescript": "5.5.4",
@@ -46,7 +47,8 @@
     "test": "vitest",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --check .",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "prepare": "cd .. && husky install portfolio/.husky"
   },
   "browserslist": {
     "production": [
