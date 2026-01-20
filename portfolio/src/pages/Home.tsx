@@ -37,7 +37,7 @@ const Home: FunctionComponent = () => (
           <p>
             I am dedicated to writing clean, maintainable code and am always on
             the lookout for ways to improve the user experience. I am a strong
-            communicator and a team player, I am always willing to go the extra
+            communicator, a team player, and I'm always willing to go the extra
             mile to ensure that the end product meets the client's needs.
           </p>
         </section>
