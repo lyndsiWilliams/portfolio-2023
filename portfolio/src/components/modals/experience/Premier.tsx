@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import premierIncLogo from "../../../images/premierIncLogo.png";
 import SquareButtonModal from "../../SquareButtonModal";
 
-const NBCUniversal: FunctionComponent = () => (
+const Premier: FunctionComponent = () => (
   <SquareButtonModal
     buttonText="Frontend Engineer"
     image={premierIncLogo}
@@ -11,7 +11,7 @@ const NBCUniversal: FunctionComponent = () => (
       <>
         Premier, Inc (Hiregenics)
         <br />
-        August 2024 - Present
+        September 2024 - Present
       </>
     }
     secondaryTitleText="Frontend Software Engineer - Remote"
@@ -46,4 +46,4 @@ const NBCUniversal: FunctionComponent = () => (
   />
 );
 
-export default NBCUniversal;
+export default Premier;
