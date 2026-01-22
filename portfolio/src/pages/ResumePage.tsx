@@ -1,8 +1,6 @@
 // Package imports
 import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
-// For some reason TS couldn't recognize the PDF import but it works.
-// @ts-ignore
 import resumePDF from "../downloadableContent/LyndsiWilliamsResume2024.pdf";
 
 const ResumePage: FunctionComponent = () => (
