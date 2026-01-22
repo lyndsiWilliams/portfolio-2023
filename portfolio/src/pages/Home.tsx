@@ -2,11 +2,12 @@
 import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 // Components
-import Preset from "../components/modals/experience/Preset";
-import TeamLead from "../components/modals/experience/TeamLead";
-import POC from "../components/modals/experience/POC";
-import Superset from "../components/modals/experience/Superset";
 import NBCUniversal from "../components/modals/experience/NBCU";
+import POC from "../components/modals/experience/POC";
+import Premier from "@components/modals/experience/Premier";
+import Preset from "../components/modals/experience/Preset";
+import Superset from "../components/modals/experience/Superset";
+import TeamLead from "../components/modals/experience/TeamLead";
 // Styling
 import "../styles/Home.css";
 import me from "../images/me.png";
@@ -27,35 +28,35 @@ const Home: FunctionComponent = () => (
       <div className="text-wrapper">
         <section className="intro-text" style={{ marginBottom: "48px" }}>
           <p>
-            I am a detail-oriented frontend software engineer with a passion for
-            creating user-friendly and visually appealing websites and
-            applications. With over 3 years of experience in the industry, I
-            have a broad understanding of web development technologies,
-            including HTML, CSS, functional styling, JavaScript, TypeScript,
-            Next.js, React, and React Native.
+            I'm a frontend software engineer who thrives on building intuitive, 
+            polished user interfaces that users actually enjoy. With 5+ years 
+            of experience, I've grown from bootcamp graduate to senior developer, 
+            contributing to everything from open-source data visualization 
+            platforms to AI-powered enterprise tools.
           </p>
           <p>
-            I am dedicated to writing clean, maintainable code and am always on
-            the lookout for ways to improve the user experience. I am a strong
-            communicator, a team player, and I'm always willing to go the extra
-            mile to ensure that the end product meets the client's needs.
+            I'm meticulous about the details (components misaligned by a few pixels 
+            will absolutely bug me until I fix them) and I love collaborating with 
+            teams to turn complex requirements into elegant solutions. My work spans 
+            React, TypeScript, GraphQL, and modern frontend tooling, with a focus on 
+            writing clean, maintainable code that scales.
+          </p>
+          <p>
+            Whether I'm designing UI from scratch or implementing pixel-perfect 
+            components from Figma, I bring curiosity, strong communication, and 
+            a drive to deliver products that make a real impact.
           </p>
         </section>
         <section className="skills" style={{ marginBottom: "48px" }}>
           <DividerTitle title="Skills" center hSize="h4" />
-          <h4>Front end</h4>
+          <p><strong>Languages: </strong>JavaScript, TypeScript, HTML, CSS, Python, C#, SQL</p>
           <p>
-            React, React Native, Next.js, Vite, Redux, React Context, React
-            Testing Library, Jest, Cypress, Javascript, Typescript, HTML, CSS,
-            LESS/SASS, Emotion, Tailwind CSS
+            <strong>Frontend: </strong>React, Next.js, Vite, Redux, React Context, Tailwind CSS, Emotion, LESS/SASS
           </p>
-          <h4>Back end</h4>
-          <p>Python, C#, .NET Framework, NodeJS, Express, SQL</p>
-          <h4>Other relative skills</h4>
           <p>
-            RESTful API, GraphQL, interface design, component design, Figma,
-            deployment, Git, Agile/Scrum methodology
+            <strong>Testing & Tools: </strong>React Testing Library, Jest, Git
           </p>
+          <p><strong>Backend & APIs: </strong>Node.js, Express, GraphQL, RESTful API, .NET Framework</p>
         </section>
         <section className="experience">
           <DividerTitle title="Experience" center hSize="h4" />
@@ -78,10 +79,10 @@ const Home: FunctionComponent = () => (
               display: "flex",
               flexDirection: "row",
               flexWrap: "wrap",
-              alignItems: "flex-start",
               justifyContent: "space-between",
             }}
           >
+            <Premier />
             <NBCUniversal />
             <Superset />
             <Preset />

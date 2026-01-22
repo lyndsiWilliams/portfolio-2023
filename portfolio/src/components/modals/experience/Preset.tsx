@@ -19,37 +19,26 @@ const Preset: FunctionComponent = () => (
     experienceContent={
       <>
         <p>
-          • Worked with a team of frontend and backend developers, QA, and
-          design using Scrum/Agile methodology
+          • Built and maintained features for a SaaS platform managing Apache 
+          Superset instances for enterprise customers
         </p>
         <p>
-          • Planned out feature work by breaking it down into tickets and
-          building architectural diagrams
-        </p>
-        <p>• Implemented feature work with clean, maintainable code</p>
-        <p>
-          • Reviewed code in pull requests to ensure everything stayed within
-          the project's code styles
+          • Collaborated with cross-functional teams (frontend, backend, QA, design) 
+          using Scrum/Agile methodology
         </p>
         <p>
-          • Created dynamic functional components to be used throughout the
-          product
+          • Architected feature work by breaking down requirements into tickets and 
+          creating technical diagrams
         </p>
         <p>
-          • Removed tech debt by cleaning up errors/warnings in the code,
-          converting JavaScript files to TypeScript, and converting Enzyme test
-          files to React Testing Library
-        </p>
-        <p>• Improved and maintained frontend component tests</p>
-        <p>
-          • Upkept an ongoing initiative to remove async warnings from the test
-          suite
+          • Created dynamic functional components to improve user experience 
+          throughout the product
         </p>
         <p>
-          • Co-lead the Community Partners program - we helped new open-sourcers
-          learn to contribute to open source projects by assisting with their
-          first Superset contributions
+          • Co-led the Community Partners program, mentoring new contributors 
+          through their first open source contributions
         </p>
+        <p>• Drove TypeScript migration and test modernization efforts across the codebase</p>
       </>
     }
   />
